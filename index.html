@@ -322,19 +322,19 @@
 <div id="pricing">
       <div class="sectionheader">OUR PRICING</div>
        <div class="row">
-  <div class="col">
+  <div class="col" id="pricelist">
          <h3>Single class</h3>
       <p>One drop-in class</p>
       <div id="price">$20</div>
       <p>Drop in for classes without any commitment</p>
   </div>
-  <div class="col">
+  <div class="col" id="pricelist">
         <h3>Ten class pack</h3>
       <p>Save more </p>
       <div id="price">$190</div>
       <p>Expires after 2 months</p>
         </div>
-  <div class="col">
+  <div class="col" id="pricelist">
       <h3>1 month unlimited classes</h3>
       <p>Auto-renews every month</p>
       <div id="price">$150</div>
@@ -350,24 +350,27 @@
   <button class="enquire">Enquire now!</button>
     </div>
   </div>
-  <div id="schedule" >
-  <h2>Our class schedule</h2>
-  <p>We have classes everyday to suit your timing.</p>
+  <div class="mobileview">
+    <div id="schedule">
+        <div class="sectionheader">CLASS SCHEDULE</div>
+  <div class="classes">Each course at Ninja Gym has been carefully developed in order to maximize your learning in the least amount of time. All age groups, genders, skill levels, and fitness levels are welcome. Classes are limited to 15 participants per session to ensure that everyone gets personalized attention from our instructors.</div>
+<div class="table-responsive" id="table">
 <table class="schedule">
   <thead>
   <tr>
-    <th></th>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th> 
-    <th>Friday</th>
-    <th>Saturday</th>
-    <th>Sunday</th>
+    <th class="headrow"></th>
+    <th class="headrow">Monday</th>
+    <th class="headrow">Tuesday</th>
+    <th class="headrow">Wednesday</th>
+    <th class="headrow">Thursday</th> 
+    <th class="headrow">Friday</th>
+    <th class="headrow">Saturday</th>
+    <th class="headrow">Sunday</th>
   </tr>
   </thead>
+  <tbody>
   <tr>
-    <th rowspan="2">8.00 am</th>
+    <th rowspan="2" class="headcol">8.00 am</th>
     <td rowspan="2" class="tkd">Taekwando<br>Felix<br>8-9 am</td>
     <td></td>
     <td rowspan="2" class="jjs">Ju-Jitsu<br>Mark<br>8-9 am</td>
@@ -383,7 +386,7 @@
     <td></td>
     </tr>
   <tr>
-    <th rowspan="2">9.00 am</th>
+    <th rowspan="2" class="headcol">9.00 am</th>
     <td></td>
     <td></td>
     <td></td>
@@ -398,7 +401,7 @@
     <td></td>
     </tr>
   <tr>
-    <th rowspan="2">10.00 am</th>
+    <th rowspan="2" class="headcol">10.00 am</th>
     <td></td>
     <td></td>
     <td></td>
@@ -415,7 +418,7 @@
     <td></td>
     </tr>
   <tr>
-    <th rowspan="2">11.00 am</th>
+    <th rowspan="2" class="headcol">11.00 am</th>
     <td></td>
     <td></td>
     <td></td>
@@ -430,11 +433,11 @@
     <td></td>
     <td></td>
     <td></td>
-    <td rowspan="2" class="special">Conditioning<br>Melissa<br>11.30-12.30pm</td>
-    <td rowspan="2" class="special">Kickboxing<br>Melissa<br>11.30-1.30pm</td>
+    <td rowspan="2" class="special">Group sparring<br>Jack<br>11.30-12.30pm</td>
+    <td rowspan="2" class="special">Group sparring<br>Felix<br>11.30-12.30pm</td>
     </tr>
   <tr>
-    <th rowspan="2">12.00 pm</th>
+    <th rowspan="2" class="headcol">12.00 pm</th>
     <td></td>
         <td rowspan="2" class="muaythai">Muay Thai<br>John<br>12-1 pm</td>
     <td></td>
@@ -449,7 +452,7 @@
     <td></td>
     </tr>
   <tr>
-    <th rowspan="2">1.00 pm</th>
+    <th rowspan="2" class="headcol">1.00 pm</th>
     <td></td>
     <td></td>
     <td></td>
@@ -465,7 +468,7 @@
     <td></td>
     </tr>
   <tr>
-    <th rowspan="2">2.00 pm</th>
+    <th rowspan="2" class="headcol">2.00 pm</th>
     <td></td>
     <td></td>
     <td></td>
@@ -484,7 +487,7 @@
     <td></td>
     </tr>
   <tr>
-    <th rowspan="2">3.00 pm</th>
+    <th rowspan="2" class="headcol">3.00 pm</th>
     <td></td>
     <td></td>
     <td></td>
@@ -501,7 +504,7 @@
     <td></td>
     </tr>
   <tr>
-    <th rowspan="2">4.00 pm</th>
+    <th rowspan="2" class="headcol">4.00 pm</th>
     <td></td>
     <td></td>
     <td></td>
@@ -520,7 +523,7 @@
     <td></td>
     </tr>
   <tr>
-    <th rowspan="2">5.00 pm</th>
+    <th rowspan="2" class="headcol">5.00 pm</th>
     <td rowspan="2" class="jjs">Ju-jitsu<br>Mark<br>5-6 pm</td>
     <td rowspan="2" class="tkd">Taekwando<br>Felix<br>5-6 pm</td>
     <td rowspan="2" class="muaythai">Muay Thai<br>John<br>5-6 pm</td>
@@ -534,7 +537,7 @@
       <td></td>
     </tr>
   <tr>
-    <th rowspan="2">6.00 pm</th>
+    <th rowspan="2" class="headcol">6.00 pm</th>
         <td></td>
        <td></td>
     <td rowspan="6" class="closed">Closed</td>
@@ -542,7 +545,7 @@
     <td></td>
     <td></td>
     </tr>
-         <tr>
+  <tr>
     <td></td>
     <td></td>
     <td></td>
@@ -550,7 +553,7 @@
     <td rowspan="2" class="mma">MMA<br>Sam<br>6.30-7.30 pm</td>
     </tr>
   <tr>
-    <th rowspan="2">7.00 pm</th>
+    <th rowspan="2" class="headcol">7.00 pm</th>
     <td></td>
     <td></td>
     <td></td>
@@ -564,7 +567,7 @@
     <td></td>
        </tr>
   <tr>
-    <th rowspan="2">8.00 pm</th>
+    <th rowspan="2" class="headcol">8.00 pm</th>
     <td rowspan="2" class="muaythai">Muay Thai<br>John<br>8-9 pm</td>
     <td rowspan="2" class="jjs">Ju-Jitsu<br>Mark<br>8-9 pm</td>
     <td rowspan="2" class="boxing">Boxing<br>Patrick<br>8-9 pm</td>
@@ -573,7 +576,55 @@
     <td></td>
     <td></td>
     </tr>
+    </tbody>
 </table>
+</div>
+    </div>
+    </div>
+    <div class="mobileview">
+  <div id="contact">
+      <div class="sectionheader">CONTACT US</div>
+    <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <div class="contactdetails">
+    
+  <h6>Start your Ninja journey with a Complimentary Introductory Class of your choice! Experience and learn the basic techniques with our professional instructors - we guaranteed you will be hooked!</h6></div>
+  <ul>
+    <li><a href=""><i class="fas fa-map-marker-alt" id="fa"></i></a>  2 College Ave West, Singapore 138607</li>
+<li><a href="#"><i class="fab fa-facebook" style="color:#3b5998" id="fa"></i></a>  
+facebook.com/fightclub</li>
+  <li><a href="#"><i class="fab fa-twitter" style="color:#1da1f2" id="fa"></i></a>   https://t.co/HyNW4tByaR</li>
+  <li><a href="#"><i class="fab fa-instagram" style="color:red" id="fa"></i></a>  @fightclubsg</li>
+  <li><a href="#"><i class="fas fa-phone-volume" style="color:lime"  id="fa"></i></a>  +65 9480 8908</li>
+  <li><a href="#"><i class="far fa-clock" style="color:orange"  id="fa"></i></a> Fri - Tues: 8am to 9pm </li>
+  <li id="hidden"><a href="#"><i class="far fa-clock" style="color:transparent"  id="fa"></i></a> Wed - Thurs: 8am to 6pm </li>
+  </ul>
+  </div>
+<div class="col-sm-12 col-md-6">
+  <div class="contactdetails">
+   <h6>Or if you prefer, leave your contact information and we will get back to you ASAP.</h6></div>
+<div class="contactform">
+<form action="#" method="GET">
+  <fieldset>
+        <input id="firstname" name="firstname" type="text" placeholder="Name" required><br><br>
+     <input id="lastname" name="lastname" type="text" placeholder="Surname" required><br><br>
+    <input id="phone" name="phone" type="number" maxlength="8" minlength="8" placeholder="Mobile number" required><br><br>
+    <input id="email" name="email" placeholder="Email address" required><br><br>
+    <label for="time">*Experience level:</label>
+    <select name="experience" id="experience>
+  <option value="beginner"></option>
+  <option value="beginner">Beginner</option>
+  <option value="some">Some boxing experience</option>
+  <option value="expert">Expert</option>
+  <option value="competition">Competition level</option>
+</select><br><br>
+     <textarea rows="6" cols="52" placeholder="Ask away"></textarea><br><br>
+    <input type="submit" value="Submit">
+    </fieldset>
+</form></div>
+</div>
+</div><br>
+<a href="#" class="top">Back to top</a>
 </div>
 </body>
 </html>
