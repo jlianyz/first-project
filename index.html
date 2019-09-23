@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -14,15 +13,21 @@
     <script src="https://kit.fontawesome.com/eaedda9ae5.js"></script>
 </head>
 <body>
-  <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark">
+  
+  <!--navbar-->
+  
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbar">
-    <a class="navbar-brand d-none d-md-block" href="#"><img src="images/ninjagymlogo.JPG"></a>
+    <a class="navbar-brand" href="index.html"><img src="images/ninjagymlogo.JPG" class="linkHome"></a>
     <ul class="navbar-nav w-100 nav-justified mr-auto mt-2 mt-lg-0">
       <li class="nav-item">
-        <a class="nav-link" href="gym.html"><i class="fas fa-house-damage" id="fa"></i> The Gym</a>
+        <a class="nav-link" href="index.html"><i class="fas fa-house-damage" id="fa"></i> Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gym.html"><i class="fas fa-dumbbell" id="fa"></i> The Gym</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="instructors.html"><i class="fas fa-user-friends" id="fa"></i> Instructors</a>
@@ -38,105 +43,183 @@
       </li>
     </ul>
   </div>
-</nav>    
+</nav>
+<!--cover image-->
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <br><br>
+    <br><br><br><br>
     <h1 class="display-4">Ninja Gym</h1><br><br>
     <p class="lead">The ultimate fight experience</p><br><br><br>
-    <div id="button">
-      <a class="button" href="contact.html">Book a free trial!</a></div>
+     <div class="d-sm-block d-md-none">
+      <a class="button" href="#linkForm"s>Book a free trial!</a></div>
+  <!--for desktop-->
+  <div class="d-none d-md-block">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg" id="freeTrial">
+    Book a free trial now!</button>
+      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+      Come check out our gym and enjoy a free trial class!
+          <button type="button" id="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        Complete the form below and start your Ninja journey today.<br><br>
+          <div class="contactform">
+          <form action="#" method="GET">
+            <fieldset>
+              <input id="firstname" name="firstname" type="text" placeholder="Name" required>
+              <input id="lastname" name="lastname" type="text" placeholder="Surname" required><br><br>
+              <input id="phone" name="phone" type="number" maxlength="8" minlength="8" placeholder="Mobile number" required>
+              <input id="email" name="email" placeholder="Email address" required><br><br>
+              <input type="submit" value="Submit" data-dismiss="modal">
+        </div>
+    </div>
+    </div>
   </div>
 </div>
+</div>
+  </div>
+</div>
+<div class="row" id="desc">
+  <div class="col-md-4 d-none d-md-block" id="coverPage1">
+    <h4>Concept</h4>
+    <p>Get an effective and fun workout at Ninja Gym, while learning from the best international martial artists.</p><br>
+    <a class="button" href="gym.html">About the gym</a>
+  </div>
+  <div class="col-md-4 d-none d-md-block" id="coverPage2">
+    <h4>Book a class</h4>
+    <p>With 4 classes a day, 7 days a week, you will definitely be able to find a class that fits into your schedule.</p><br>
+    <a class="button" href="schedule.html">Class timetable</a>
+  </div>
+  <div class="col-md-4 d-none d-md-block" id="coverPage3">
+    <h4>Instructors</h4>
+    <p>Learn from the most experienced trainers, who will motivate and get you in your best shape ever.</p><br>
+    <a class="button" href="instructors.html">Meet the team</a>
+  </div>
+</div>
+<div class="hiddenMD">
 <!--gym-->
-<div class="mobileview">
-<div id="gym">
-      <div class="sectionheader">THE GYM</div>
+<div class="section" id="gym">
+  <div class="sectionheader">THE GYM</div>
 <div class="row">
-  <div class="col-sm-12 col-md-12">
-    <div class="content">
-      <img src="images/gym1.jpg" alt="gym1" style="width:100%">
-    </div>
+  <div class="col-sm-12 d-sm-block d-md-none">
+    <img src="images/gym1.jpg" alt="gym1" style="width:100%">
   </div>
-  <div class="col-sm-12 col-md-12">
-    <div class="content">
-      <img src="images/gym2.jpg" alt="gym2" style="width:100%">
-      </div>
+  <div class="col-sm-12 d-sm-block d-md-none">
+    <img src="images/gym2.jpg" alt="gym2" style="width:100%">
   </div>
-  <div class="row">
-  <h3>Training philosophy</h3>
-      <p>Our goal is to help you to evolve into everything that you can be. The Ninja Motto is Unleash Your Greatness since it is about your journey to unleashing your potential as a human being.</p>
-      <p>All our courses are rooted in reality. You will learn self-defense for the real world and you will develop a keen understanding of how to protect yourself in real life. Every single technique taught at the Ninja Gym is battle-tested and street-certified.</p>
-  </div>
-  <div class="col-sm-12 col-md-12">
-    <div class="content">
-      <img src="images/gym3.jpg" alt="gym3" style="width:100%">
-    </div>
-  </div>
-  <div class="col-sm-12 col-md-12">
-    <div class="content">
-      <img src="images/gym4.jpg" alt="gym4" style="width:100%">
-    </div>
-  </div>
-<div class="row">
-  <h3>Our facilities</h3>
-  <ul>
-    <li>State-of-the-art cardiovascular, free weights and resistance training equipment</li>
-    <li>2 boxing rings</li>
-    <li>Lounge area with phone charging stations</li>
-    <li>Rental shoe lockers</li>
-    <li>Free usage of boxing gloves and wraps</li>
-    <li>Complimentary towel service</li>
-    <li>Free wifi access</li>
-    <li>12 free standing heavy bags</li>
-    <li>Spacious locker rooms with steam and sauna facilities</li>
-    <li>Over 20,500 sq ft space with world-class design features</li>
-    <li>InBody body composition analysis machine </li></ul>
 </div>
-  <div class="col-sm-12 col-md-12">
-    <div class="content">
-      <img src="images/gym6.jpg" alt="gym6" style="width:100%">
+<div class="row">
+  <div class="col-sm-12">
+    <h3>Training philosophy</h3>
+    <p>Our goal is to help you to evolve into everything that you can be. The Ninja Motto is Unleash Your Greatness since it is about your journey to unleashing your potential as a human being. All our courses are rooted in reality. You will learn self-defense for the real world and you will develop a keen understanding of how to protect yourself in real life. Every single technique taught at the Ninja Gym is battle-tested and street-certified.
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12 d-sm-block d-md-none">
+    <img src="images/gym3.jpg" alt="gym3" style="width:100%">
+  </div>
+  <div class="col-sm-12 d-sm-block d-md-none">
+    <img src="images/gym4.jpg" alt="gym4" style="width:100%">
+  </div>
+</div>
+  <div class="row">
+    <div class="col-md-6" id="gymcarousel">
+      <div id="carouselControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/gym1.jpg" class="d-block w-100" alt="gym1">
     </div>
-  </div>  <div class="col-sm-12-col-md-6">
-    <div class="content">
-      <img src="images/gym5.jpg" alt="gym5" style="width:100%">
+    <div class="carousel-item">
+      <img src="images/gym2.jpg" class="d-block w-100" alt="gym2">
+    </div>
+    <div class="carousel-item">
+      <img src="images/gym3.jpg" class="d-block w-100" alt="gym3">
+    </div>
+    <div class="carousel-item">
+      <img src="images/gym4.jpg" class="d-block w-100" alt="gym4">
+    </div>
+    <div class="carousel-item">
+      <img src="images/gym5.jpg" class="d-block w-100" alt="gym5">
+    </div>
+    <div class="carousel-item">
+      <img src="images/gym6.jpg" class="d-block w-100" alt="gym6">
+    </div>
+    <div class="carousel-item">
+      <img src="images/gym7.jpg" class="d-block w-100" alt="gym7">
+    </div>
+    <div class="carousel-item">
+      <img src="images/gym8.jpg" class="d-block w-100" alt="gym8">
     </div>
   </div>
+  <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+  <div class="col-sm-12 col-md-6 d-inline-block">
+    <h3>Our facilities</h3>
+    <ul id="gym">
+      <li>State-of-the-art cardiovascular, free weights and resistance training equipment</li>
+      <li>2 boxing rings</li>
+      <li>Lounge area with phone charging stations</li>
+      <li>Rental shoe lockers</li>
+      <li>Free usage of boxing gloves and wraps</li>
+      <li>Complimentary towel service</li>
+      <li>Free wifi access</li>
+      <li>12 free standing heavy bags</li>
+      <li>Spacious locker rooms with steam and sauna facilities</li>
+      <li>Over 20,500 sq ft space with world-class design features</li>
+      <li>InBody body composition analysis machine </li>
+      <li>2 competition-sized boxing rings</li>
+      </ul>
   </div>
-  <br>
-  <div class="classtype">
-  <h3>Overview of our classes</h3>
-
-<div class="accordion" id="accordion">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne"><i class="fas fa-play" id="fa"></i>
+</div>
+<div class="row">
+  <div class="col-sm-12 d-sm-block d-md-none">
+    <img src="images/gym5.jpg" alt="gym5" style="width:100%">
+  </div>
+  <div class="col-sm-12 d-sm-block d-md-none">
+    <img src="images/gym6.jpg" alt="gym6" style="width:100%">
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <h3>Overview of our classes</h3>
+    <div class="accordion" id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne"><i class="fas fa-play" id="fa"></i>
           Taekwando
-        </button>
-      </h2>
-    </div>
+            </button>
+          </h2>
+        </div>
 
-    <div id="collapseOne" class="collapse" data-parent="#accordion">
-      <div class="card-body">
-       Taekwando is a Korean martial art, characterized by its emphasis on head-height kicks, jumping and spinning kicks, and fast kicking techniques. It adopts stances that are narrower and taller than the broader, wide stances used by most other martial arts. The tradeoff of decreased stability is believed to be worth the commensurate increase in agility, particularly in Kukkiwon-style Taekwondo.
+        <div id="collapseOne" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+           Taekwando is a Korean martial art, characterized by its emphasis on head-height kicks, jumping and spinning kicks, and fast kicking techniques. It adopts stances that are narrower and taller than the broader, wide stances used by most other martial arts. The tradeoff of decreased stability is believed to be worth the commensurate increase in agility, particularly in Kukkiwon-style Taekwondo.
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-    <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"> <i class="fas fa-play" id="fa"></i>
-          Muay Thai
-        </button>
-      </h2>
-    </div>
-    <div id="collapseTwo" class="collapse" data-parent="#accordion">
-      <div class="card-body">
-        Muay Thai is one of the most powerful and effective martial arts in the world. Developed over thousands of years, this ancient martial art of Thailand is known for its tremendous power, maximum efficiency, and raw simplicity. Muay Thai utilizes a beautiful symphony of kicks, punches, knees, and elbows with fluidity and grace. Muay Thai is often referred to as the “Art of Eight Limbs”. 
+        <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"> <i class="fas fa-play" id="fa"></i>
+              Muay Thai
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            Muay Thai is one of the most powerful and effective martial arts in the world. Developed over thousands of years, this ancient martial art of Thailand is known for its tremendous power, maximum efficiency, and raw simplicity. Muay Thai utilizes a beautiful symphony of kicks, punches, knees, and elbows with fluidity and grace. Muay Thai is often referred to as the “Art of Eight Limbs”. 
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
     <div class="card">
     <div class="card-header" id="headingThree">
       <h2 class="mb-0">
@@ -194,437 +277,689 @@
     </div>
   </div>
 </div>
-
 </div>
 </div>
 </div>
-  </div>
-<div class="mobileview">
-<div id="instructors">
-      <div class="sectionheader">THE NINJA TEAM</div>
-        <h2 class="lower">Our instructors</h2>
-        <p>Our instructors have competed and won in the most prestigious global martial arts competitions. They bring with them over 100 years of cumulative world championship experience. Click on their photos to read more about their backgrounds.</p>
-      <div class="row">
-        <div class="column" id="boxer">
-          <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="images/boxer1.jpg" alt="boxer1" class="img-fluid">
-    </div>
-    <div class="flip-card-back">
-      <h1>John</h1>
-      <p>Muay Thai coach</p>
-      <ul class="fa-ul">
-          <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>4x ONE Championship Lightweight World Champion</li>
-          <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Over 20 years of competitive martial arts and teaching experience</li>
-          <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Known for his strong defense and counter offense</li>
-          </ul>
+<!--instructors-->
+<div class="section" id="instructors">
+  <div class="sectionheader">OUR INSTRUCTORS</div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>Our instructors</h3>
+      <p>Our instructors have competed and won in the most prestigious global martial arts competitions. They bring with them over 100 years of cumulative world championship experience. Click on their photos to read more about their backgrounds.</p>
     </div>
   </div>
-</div>
-       </div>
-        <div class="column" id="boxer">
-         <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="images/boxer2.jpg" alt="boxer2" class="img-fluid">
-    </div>
-    <div class="flip-card-back">
-      <h1>Felix</h1>
-      <p>Taekwando coach</p>
-       <ul class="fa-ul">
-          <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>5x Title Holder in the National Taekwondo Sparring Championship</li>
-          <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Received his Taekwondo 6th Dan Black Belt in 2011 - first coach in Singapore to attain this status</li>
-          <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Equipped with a certification in Injury Therapy, allowing him to provide sound advice to students during competition/training</li>
-          </ul>
-    </div>
-  </div>
-</div>
+  <div class="row" id="boxer">
+    <div class="col-sm-12 col-md-6">
+      <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/boxer1.jpg" alt="boxer1" class="img-fluid">
+            </div>
+            <div class="flip-card-back">
+              <h2>John</h2>
+                <h6>Muay Thai coach</h6>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>4x ONE Championship Lightweight World Champion</li>
+                    <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Over 20 years of competitive martial arts and teaching experience</li>
+                    <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Known for his strong defense and counter offense</li>
+                  </ul>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="column" id="boxer"><div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="images/boxer3.jpg" alt="boxer3" class="img-fluid">
     </div>
-    <div class="flip-card-back">
-      <h1>Sam</h1>
-      <p>MMA coach</p>
-       <ul class="fa-ul">
-          <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Competed in and won numerous World, National, and Regional martial arts competitions such as the FILA World Championships</li>
-          <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Widely regarded as the #1 pound-for-pound MMA fighter in Asia</li>
-          <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Copa do Mundo World Champion in MMA with over 15 years of teaching experience</li>
-          </ul>
-    </div>
-  </div>
-</div>
+    <div class="col-sm-12 col-md-6" id="boxer">
+      <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/boxer2.jpg" alt="boxer2" class="img-fluid">
+            </div>
+            <div class="flip-card-back">
+              <h2>Felix</h2>
+                <h6>Taekwando coach</h6>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>5x Title Holder in the National Taekwondo Sparring Championship</li>
+                    <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Received his Taekwondo 6th Dan Black Belt in 2011 - first coach in Singapore to attain this status</li>
+                    <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Equipped with a certification in Injury Therapy, allowing him to provide sound advice to students during competition/training</li>
+                  </ul>
+            </div>
+          </div>
         </div>
-        <div class="column" id="boxer"><div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="images/boxer4.jpg" alt="boxer4" class="img-fluid">
-    </div>
-    <div class="flip-card-back">
-      <h1>Patrick</h1>
-      <p>Boxing coach</p>
-       <ul class="fa-ul">
-          <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Known for being an unorthodox knockout artist with his powerful punches and aggressive style</li>
-          <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>3x WBA Boxing World Champion</li>
-          <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Has trained alongside fellow World Champions Manny Pacquiao and Jerwin Ancajas</li>
-          </ul>
     </div>
   </div>
-</div>
+  <div class="row">
+    <div class="col-sm-12 col-md-6" id="boxer">
+      <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/boxer3.jpg" alt="boxer3" class="img-fluid">
+            </div>
+            <div class="flip-card-back">
+              <h2>Sam</h2>
+                <h6>MMA coach</h6>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Competed in and won numerous World, National, and Regional martial arts competitions such as the FILA World Championships</li>
+                    <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Widely regarded as the #1 pound-for-pound MMA fighter in Asia</li>
+                    <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Copa do Mundo World Champion in MMA with over 15 years of teaching experience</li>
+                  </ul>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="column" id="boxer"><div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="images/boxer5.jpg" alt="boxer5" class="img-fluid">
     </div>
-    <div class="flip-card-back">
-      <h1>Jack</h1>
-      <p>Karate coach</p>
-       <ul class="fa-ul">
-          <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Only coach in Singapore to have competed in and won 2 world open tournaments</li>
-          <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Over 20 years of teaching experience, and his students are well known for their accuracy and power</li>
-          <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Internationally qualified coach who started his coaching career at the famed Shtoryu Karate Association</li>
-          </ul>
-    </div>
-  </div>
-</div>
+    <div class="col-sm-12 col-md-6" id="boxer">
+      <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/boxer4.jpg" alt="boxer4" class="img-fluid">
+            </div>
+            <div class="flip-card-back">
+              <h2>Patrick</h2>
+                <h6>Boxing coach</h6>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Known for being an unorthodox knockout artist with his powerful punches and aggressive style</li>
+                    <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>3x WBA Boxing World Champion</li>
+                    <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Has trained alongside fellow World Champions Manny Pacquiao and Jerwin Ancajas</li>
+                  </ul>
+            </div>
+          </div>
         </div>
-        <div class="column" id="boxer"><div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="images/boxer6.jpg" alt="boxer6"  class="img-fluid">
-    </div>
-    <div class="flip-card-back">
-      <h1>Mark</h1>
-      <p>Ju-jitsu coach</p>
-       <ul class="fa-ul">
-          <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Gold Medalist at the Brazil Nationals and a 3x Sao Paulo State Champion with over 20 years of experience</li>
-          <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Holds a 1st degree Black Belt in Jiu-Jitsu with over 10 years of teaching experience</li>
-          <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Favorite move is the rear naked choke, which he has utilised to submit his opponents.</li>
-          </ul>
     </div>
   </div>
-</div>
-
-</div>
-</div>
-</div>
-  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-6" id="boxer">
+      <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/boxer5.jpg" alt="boxer5" class="img-fluid">
+            </div>
+            <div class="flip-card-back">
+              <h2>Jack</h2>
+                <h6>Karate coach</h6>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Only coach in Singapore to have competed in and won 2 world open tournaments</li>
+                    <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Over 20 years of teaching experience, and his students are well known for their accuracy and power</li>
+                    <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Internationally qualified coach who started his coaching career at the famed Shtoryu Karate Association</li>
+                  </ul>
+            </div>
+          </div>
         </div>
-<div class="mobileview">
-<div id="pricing">
-      <div class="sectionheader">OUR PRICING</div>
-       <div class="row">
-  <div class="col" id="pricelist">
-         <h3>Single class</h3>
-      <p>One drop-in class</p>
-      <div id="price">$20</div>
-      <p>Drop in for classes without any commitment</p>
-  </div>
-  <div class="col" id="pricelist">
-        <h3>Ten class pack</h3>
-      <p>Save more </p>
-      <div id="price">$190</div>
-      <p>Expires after 2 months</p>
+    </div>
+    <div class="col-sm-12 col-md-6" id="boxer">
+      <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/boxer6.jpg" alt="boxer6" class="img-fluid">
+            </div>
+            <div class="flip-card-back">
+              <h2>Mark</h2>
+                <h6>Ju-jitsu coach</h6>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Gold Medalist at the Brazil Nationals and a 3x Sao Paulo State Champion with over 20 years of experience</li>
+                    <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Holds a 1st degree Black Belt in Jiu-Jitsu with over 10 years of teaching experience</li>
+                    <li><span class="fa-li"><i class="fas fa-fist-raised" id="fa"></i></span>Favorite move is the rear naked choke, which he has utilised to submit his opponents.</li>
+                  </ul>
+            </div>
+          </div>
         </div>
-  <div class="col" id="pricelist">
+    </div>
+  </div>
+</div>  
+<!--pricing-->
+<div class="section" id="pricing">
+  <div class="sectionheader">OUR RATES</div>
+  <div class="row">
+    <div class="column" id="pricelist">
+      <h3>Single class</h3>
+        <p>One drop-in class</p>
+          <div id="price">$20</div>
+        <p>Drop in for classes without any commitment</p>
+    </div>
+    <div class="column" id="pricelist">
+      <h3>Ten class pack</h3>
+        <p>Save more </p>
+          <div id="price">$190</div>
+        <p>Expires after 2 months</p>
+    </div>
+    <div class="column" id="pricelist">
       <h3>1 month unlimited classes</h3>
-      <p>Auto-renews every month</p>
-      <div id="price">$150</div>
-      <p>Hassle free and cost-effective for regulars</p>
-      </div>
-</div>
-<br>
-    <div id="corporate">
-    <h2>Corporate programs</h2>
-  <div class="row" id="corporate">
-  At Ninja Gym, we believe that a healthy workplace equals a healthy business. Through our very diverse range of martial arts and fitness programs, we aim to help people achieve greatness in all aspects of their lives. Help your employees achieve good health, fitness, mental strength, confidence, and a balanced life, and you will reap the benefits of increased employee productivity and enhanced profitability. Consider it an investment in your most valuable asset, your employees.
-  <br><br>
-  <button class="enquire">Enquire now!</button>
+        <p>Auto-renews every month</p>
+          <div id="price">$150</div>
+        <p>Hassle free and cost-effective for regulars</p>
     </div>
   </div>
-  <div class="mobileview">
-    <div id="schedule">
-        <div class="sectionheader">CLASS SCHEDULE</div>
-  <div class="classes">Each course at Ninja Gym has been carefully developed in order to maximize your learning in the least amount of time. All age groups, genders, skill levels, and fitness levels are welcome. Classes are limited to 15 participants per session to ensure that everyone gets personalized attention from our instructors.</div>
-<div class="table-responsive" id="table">
-<table class="schedule">
-  <thead>
+  <div class="row" id="corporate">
+    <div class="col-sm-12">
+      <h3>Corporate programs</h3>
+      <p>At Ninja Gym, we believe that a healthy workplace equals a healthy business. Through our very diverse range of martial arts and fitness programs, we aim to help people achieve greatness in all aspects of their lives. Help your employees achieve good health, fitness, mental strength, confidence, and a balanced life, and you will reap the benefits of increased employee productivity and enhanced profitability. Consider it an investment in your most valuable asset, your employees.</p>
+      <br>
+      <button class="enquire">Enquire now!</button>
+    </div>
+  </div>
+</div>
+<!--schedule-->
+<div class="section">
+  <div class="sectionheader">CLASS SCHEDULE</div>
+  <div class="row">
+  <div class="col-sm-12">
+  <p>Each course at Ninja Gym has been carefully developed in order to maximize your learning in the least amount of time. All age groups, genders, skill levels, and fitness levels are welcome. Classes are limited to 15 participants per session to ensure that everyone gets personalized attention from our instructors.</p>
+ </div>
+    <div class="col-sm-12 d-md-block d-lg-none btn-group" role="group" id="parent">
+    <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+      Mon
+    </button>
+    <div class="dropdown-menu">
+      <table class="dropdown-item table-hover">
   <tr>
-    <th class="headrow"></th>
-    <th class="headrow">Monday</th>
-    <th class="headrow">Tuesday</th>
-    <th class="headrow">Wednesday</th>
-    <th class="headrow">Thursday</th> 
-    <th class="headrow">Friday</th>
-    <th class="headrow">Saturday</th>
-    <th class="headrow">Sunday</th>
+    <th>Time</th>
+    <th>Class</th>
+    <th>Instructor</th>
   </tr>
-  </thead>
-  <tbody>
   <tr>
-    <th rowspan="2" class="headcol">8.00 am</th>
-    <td rowspan="2" class="tkd">Taekwando<br>Felix<br>8-9 am</td>
-    <td></td>
-    <td rowspan="2" class="jjs">Ju-Jitsu<br>Mark<br>8-9 am</td>
-    <td rowspan="2" class="mma">MMA<br>Sam<br>8-9 am</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    </tr>
+    <td>8 - 9 am</td>
+    <td>Muay Thai</td>
+    <td>Felix</td>
+  </tr>
   <tr>
-    <td rowspan="2" class="muaythai">Muay Thai<br>John<br>8.30-9.30 am</td>
-    <td rowspan="2" class="karate">Karate<br>Jack<br>8.30-9.30 am</td>
-    <td></td>
-    <td></td>
-    </tr>
+    <td>12.30 - 1.30pm</td>
+    <td>MMA</td>
+    <td>Sam</td>
+  </tr>
   <tr>
-    <th rowspan="2" class="headcol">9.00 am</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td rowspan="3" class="boxing">Boxing<br>Patrick<br>9-10.30 am</td>
-    <td rowspan="3" class="mma">MMA<br>Sam<br>9-10.30 am</td>
-    </tr>
+    <td>5 - 6 pm</td>
+    <td>Ju-jitsu</td>
+    <td>Mark</td>
+  </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    </tr>
-  <tr>
-    <th rowspan="2" class="headcol">10.00 am</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-   </tr>
+    <td>7.30 - 8.30 pm</td>
+    <td>Taekwando</td>
+    <td>Felix</td>
+  </tr>
+	</table>
+    </div>
+  </div>
+    <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Tue
+    </button>
+    <div class="dropdown-menu">
+      <table class="dropdown-item table-hover">
       <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    </tr>
+    <th>Time</th>
+    <th>Class</th>
+    <th>Instructor</th>
+  </tr>
   <tr>
-    <th rowspan="2" class="headcol">11.00 am</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    </tr>
+    <td>8.30 - 9.30 am</td>
+    <td>Muay Thai</td>
+    <td>John</td>
+  </tr>
+  <tr>
+    <td>12 - 1pm</td>
+    <td>Muay Thai</td>
+    <td>John</td>
+  </tr>
+  <tr>
+    <td>5 - 6 pm</td>
+    <td>Taekwando</td>
+    <td>Felix</td>
+  </tr>
+  <tr>
+    <td>8 - 9 pm</td>
+    <td>Muay Thai</td>
+    <td>John</td>
+  </tr>
+        </table>
+    </div>
+  </div>
+    <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+      Wed
+    </button>
+    <div class="dropdown-menu table-hover">
+      <table class="dropdown-item">
       <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td rowspan="2" class="special">Group sparring<br>Jack<br>11.30-12.30pm</td>
-    <td rowspan="2" class="special">Group sparring<br>Felix<br>11.30-12.30pm</td>
-    </tr>
+    <th>Time</th>
+    <th>Class</th>
+    <th>Instructor</th>
+  </tr>
   <tr>
-    <th rowspan="2" class="headcol">12.00 pm</th>
-    <td></td>
-        <td rowspan="2" class="muaythai">Muay Thai<br>John<br>12-1 pm</td>
-    <td></td>
-    <td rowspan="2" class="tkd">Taekwando<br>Felix<br>12-1 pm</td>
-    <td></td>
+    <td>8 - 9 am</td>
+    <td>Ju-jitsu</td>
+    <td>Mark</td>
+  </tr>
+  <tr>
+    <td>12.30 - 1.30pm</td>
+    <td>Karate</td>
+    <td>Jack</td>
+  </tr>
+  <tr>
+    <td>2.30 - 3.30 pm</td>
+    <td>Boxing</td>
+    <td>Patrick</td>
+  </tr>
+  <tr>
+    <td>5 - 6 pm</td>
+    <td>Muay Thai</td>
+    <td>John</td>
+  </tr>
+        </table>
+    </div>
+  </div>
+    <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Thu
+    </button>
+    <div class="dropdown-menu dropdown-menu-center">
+      <table class="dropdown-item table-hover">
+     <tr>
+    <th>Time</th>
+    <th>Class</th>
+    <th>Instructor</th>
+  </tr>
+  <tr>
+    <td>8 - 9 am</td>
+    <td>MMA</td>
+    <td>Sam</td>
+  </tr>
+  <tr>
+    <td>12 - 1 pm</td>
+    <td>Taekwando</td>
+    <td>Felix</td>
+  </tr>
+  <tr>
+    <td>2.30 - 3.30 pm</td>
+    <td>JMuay Thai</td>
+    <td>John</td>
+  </tr>
+  <tr>
+    <td>5 -6 pm</td>
+    <td>Karate</td>
+    <td>Jack</td>
+  </tr>
+        </table>
+    </div>
+  </div>
+    <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Fri
+      </button>
+    <div class="dropdown-menu dropdown-menu-right">
+      <table class="dropdown-item table-hover">
+    <tr>
+    <th>Time</th>
+    <th>Class</th>
+    <th>Instructor</th>
+  </tr>
+  <tr>
+    <td>8.30 - 9.30 am</td>
+    <td>Karate</td>
+    <td>Jack</td>
+  </tr>
+  <tr>
+    <td>12.30 - 1.30pm</td>
+    <td>Boxing</td>
+    <td>Patrick</td>
+  </tr>
+  <tr>
+    <td>5 - 6 pm</td>
+    <td>Boxing</td>
+    <td>Patrickk</td>
+  </tr>
+  <tr>
+    <td>8 - 9 pm</td>
+    <td>Ju-jitsu</td>
+    <td>Mark</td>
+  </tr>
+        </table>
+    </div>
+  </div>
+    <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Sat
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+      <table class="dropdown-item table-hover">
+     <tr>
+    <th>Time</th>
+    <th>Class</th>
+    <th>Instructor</th>
+  </tr>
+  <tr>
+    <td>9 - 10.30 am</td>
+    <td>Boxing</td>
+    <td>Patrick</td>
+  </tr>
+  <tr>
+    <td>11.30 - 12.30pm</td>
+    <td>Group sparring</td>
+    <td>Jack</td>
+  </tr>
+  <tr>
+    <td>5.30 - 6.30 pm</td>
+    <td>Ju-jitsu</td>
+    <td>Mark</td>
+  </tr>
+  <tr>
+    <td>7.30 - 8.30 pm</td>
+    <td>Karate</td>
+    <td>Jack</td>
+  </tr>
+        </table>
+    </div>
+  </div>
+    <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Sun
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+      <table class="dropdown-item table-hover">
+<tr>
+    <th>Time</th>
+    <th>Class</th>
+    <th>Instructor</th>
+  </tr>
+  <tr>
+    <td>9 - 10.30 am</td>
+    <td>MMA</td>
+    <td>Sam</td>
+  </tr>
+  <tr>
+    <td>11.30 - 12.30pm</td>
+    <td>Group sparring</td>
+    <td>Felix</td>
+  </tr>
+  <tr>
+    <td>6.30 - 7.30 pm</td>
+    <td>MMA</td>
+    <td>Sam</td>
+  </tr>
+  <tr>
+    <td>8 - 9 pm</td>
+    <td>Boxing</td>
+    <td>Patrick</td>
+  </tr>
+        </table>
+    </div>
+  </div>
+</div>
+</div>
+    <div class="space"><br><br><br><br><br><br><br></space></div>
+  <div class="row" id="table">
+    <div class="col-sm-12 table-responsive d-none d-md-block">
+    <table class="schedule">
+    <thead>
+    <tr>
+      <th class="headrow"></th>
+      <th class="headrow">Monday</th>
+      <th class="headrow">Tuesday</th>
+      <th class="headrow">Wednesday</th>
+      <th class="headrow">Thursday</th> 
+      <th class="headrow">Friday</th>
+      <th class="headrow">Saturday</th>
+      <th class="headrow">Sunday</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th rowspan="2" class="headcol">8.00 am</th>
+      <td rowspan="2" class="tkd">Taekwando<br>Felix<br>8-9 am</td>
+      <td></td>
+      <td rowspan="2" class="jjs">Ju-Jitsu<br>Mark<br>8-9 am</td>
+      <td rowspan="2" class="mma">MMA<br>Sam<br>8-9 am</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="muaythai">Muay Thai<br>John<br>8.30-9.30 am</td>
+      <td rowspan="2" class="karate">Karate<br>Jack<br>8.30-9.30 am</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">9.00 am</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td rowspan="3" class="boxing">Boxing<br>Patrick<br>9-10.30 am</td>
+      <td rowspan="3" class="mma">MMA<br>Sam<br>9-10.30 am</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">10.00 am</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">11.00 am</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td rowspan="2" class="special">Group sparring<br>Jack<br>11.30-12.30pm</td>
+      <td rowspan="2" class="special">Group sparring<br>Felix<br>11.30-12.30pm</td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">12.00 pm</th>
+      <td></td>
+      <td rowspan="2" class="muaythai">Muay Thai<br>John<br>12-1 pm</td>
+      <td></td>
+      <td rowspan="2" class="tkd">Taekwando<br>Felix<br>12-1 pm</td>
+      <td></td>
     </tr>
     <tr>
       <td rowspan="2" class="mma">MMA<br>Sam<br>12.30-1.30 pm</td>
-    <td rowspan="2" class="karate">Karate<br>Jack<br>12.30-1.30 pm</td>
-    <td rowspan="2" class="boxing">Boxing<br>Patrick<br>12.30-1.30pm</td>
-    <td></td>
-    <td></td>
-    </tr>
-  <tr>
-    <th rowspan="2" class="headcol">1.00 pm</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    </tr>
-      <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    </tr>
-  <tr>
-    <th rowspan="2" class="headcol">2.00 pm</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    </tr>
- <tr>
-    <td></td>
-    <td></td>
-    <td rowspan="2" class="boxing">Boxing<br>Patrick<br>2.30-3.30 pm</td>
-    <td rowspan="2" class="muaythai">Muay Thai<br>John<br>2.30-3.30 pm</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    </tr>
-  <tr>
-    <th rowspan="2" class="headcol">3.00 pm</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    </tr>
-  <tr>
-    <th rowspan="2" class="headcol">4.00 pm</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    </tr>
-  <tr>
-    <th rowspan="2" class="headcol">5.00 pm</th>
-    <td rowspan="2" class="jjs">Ju-jitsu<br>Mark<br>5-6 pm</td>
-    <td rowspan="2" class="tkd">Taekwando<br>Felix<br>5-6 pm</td>
-    <td rowspan="2" class="muaythai">Muay Thai<br>John<br>5-6 pm</td>
-    <td rowspan="2" class="karate">Karate<br>Jack<br>5-6 pm</td>
-    <td rowspan="2" class="boxing">Boxing<br>Patrick<br>5-6 pm</td>
-    <td></td>
-    <td></td>
-    </tr>
-         <tr>
-     <td rowspan="2" class="jjs">Ju-Jitsu<br>Mark<br>5.30-6.30 pm</td>
+      <td rowspan="2" class="karate">Karate<br>Jack<br>12.30-1.30 pm</td>
+      <td rowspan="2" class="boxing">Boxing<br>Patrick<br>12.30-1.30pm</td>
+      <td></td>
       <td></td>
     </tr>
-  <tr>
-    <th rowspan="2" class="headcol">6.00 pm</th>
-        <td></td>
-       <td></td>
-    <td rowspan="6" class="closed">Closed</td>
-    <td rowspan="6" class="closed">Closed</td>
-    <td></td>
-    <td></td>
+    <tr>
+      <th rowspan="2" class="headcol">1.00 pm</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td rowspan="2" class="mma">MMA<br>Sam<br>6.30-7.30 pm</td>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
-  <tr>
-    <th rowspan="2" class="headcol">7.00 pm</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-     </tr>
-         <tr>
-    <td rowspan="2" class="tkd">Taekwando<br>Felix<br>7.30-8.30 pm</td>
-        <td></td>
-    <td></td>
-    <td rowspan="2" class="karate">Karate<br>Jack<br>7.30-8.30 pm</td>
-    <td></td>
-       </tr>
-  <tr>
-    <th rowspan="2" class="headcol">8.00 pm</th>
-    <td rowspan="2" class="muaythai">Muay Thai<br>John<br>8-9 pm</td>
-    <td rowspan="2" class="jjs">Ju-Jitsu<br>Mark<br>8-9 pm</td>
-    <td rowspan="2" class="boxing">Boxing<br>Patrick<br>8-9 pm</td>
+    <tr>
+      <th rowspan="2" class="headcol">2.00 pm</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td rowspan="2" class="boxing">Boxing<br>Patrick<br>2.30-3.30 pm</td>
+      <td rowspan="2" class="muaythai">Muay Thai<br>John<br>2.30-3.30 pm</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">3.00 pm</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">4.00 pm</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">5.00 pm</th>
+      <td rowspan="2" class="jjs">Ju-jitsu<br>Mark<br>5-6 pm</td>
+      <td rowspan="2" class="tkd">Taekwando<br>Felix<br>5-6 pm</td>
+      <td rowspan="2" class="muaythai">Muay Thai<br>John<br>5-6 pm</td>
+      <td rowspan="2" class="karate">Karate<br>Jack<br>5-6 pm</td>
+      <td rowspan="2" class="boxing">Boxing<br>Patrick<br>5-6 pm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="jjs">Ju-Jitsu<br>Mark<br>5.30-6.30 pm</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">6.00 pm</th>
+      <td></td>
+      <td></td>
+      <td rowspan="6" class="closed">Closed</td>
+      <td rowspan="6" class="closed">Closed</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td rowspan="2" class="mma">MMA<br>Sam<br>6.30-7.30 pm</td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">7.00 pm</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
      </tr>
      <tr>
-    <td></td>
-    <td></td>
+      <td rowspan="2" class="tkd">Taekwando<br>Felix<br>7.30-8.30 pm</td>
+      <td></td>
+      <td></td>
+      <td rowspan="2" class="karate">Karate<br>Jack<br>7.30-8.30 pm</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">8.00 pm</th>
+      <td rowspan="2" class="muaythai">Muay Thai<br>John<br>8-9 pm</td>
+      <td rowspan="2" class="jjs">Ju-Jitsu<br>Mark<br>8-9 pm</td>
+      <td rowspan="2" class="boxing">Boxing<br>Patrick<br>8-9 pm</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
     </tr>
     </tbody>
 </table>
 </div>
     </div>
-    </div>
-    <div class="mobileview">
-  <div id="contact">
-      <div class="sectionheader">CONTACT US</div>
-    <div class="row">
-    <div class="col-sm-12 col-md-6">
-      <div class="contactdetails">
-    
-  <h6>Start your Ninja journey with a Complimentary Introductory Class of your choice! Experience and learn the basic techniques with our professional instructors - we guaranteed you will be hooked!</h6></div>
-  <ul>
-    <li><a href=""><i class="fas fa-map-marker-alt" id="fa"></i></a>  2 College Ave West, Singapore 138607</li>
-<li><a href="#"><i class="fab fa-facebook" style="color:#3b5998" id="fa"></i></a>  
-facebook.com/fightclub</li>
-  <li><a href="#"><i class="fab fa-twitter" style="color:#1da1f2" id="fa"></i></a>   https://t.co/HyNW4tByaR</li>
-  <li><a href="#"><i class="fab fa-instagram" style="color:red" id="fa"></i></a>  @fightclubsg</li>
-  <li><a href="#"><i class="fas fa-phone-volume" style="color:lime"  id="fa"></i></a>  +65 9480 8908</li>
-  <li><a href="#"><i class="far fa-clock" style="color:orange"  id="fa"></i></a> Fri - Tues: 8am to 9pm </li>
-  <li id="hidden"><a href="#"><i class="far fa-clock" style="color:transparent"  id="fa"></i></a> Wed - Thurs: 8am to 6pm </li>
-  </ul>
   </div>
-<div class="col-sm-12 col-md-6">
-  <div class="contactdetails">
-   <h6>Or if you prefer, leave your contact information and we will get back to you ASAP.</h6></div>
-<div class="contactform">
-<form action="#" method="GET">
-  <fieldset>
-        <input id="firstname" name="firstname" type="text" placeholder="Name" required><br><br>
-     <input id="lastname" name="lastname" type="text" placeholder="Surname" required><br><br>
-    <input id="phone" name="phone" type="number" maxlength="8" minlength="8" placeholder="Mobile number" required><br><br>
-    <input id="email" name="email" placeholder="Email address" required><br><br>
-    <label for="time">*Experience level:</label>
-    <select name="experience" id="experience>
-  <option value="beginner"></option>
-  <option value="beginner">Beginner</option>
-  <option value="some">Some boxing experience</option>
-  <option value="expert">Expert</option>
-  <option value="competition">Competition level</option>
-</select><br><br>
-     <textarea rows="6" cols="52" placeholder="Ask away"></textarea><br><br>
-    <input type="submit" value="Submit">
-    </fieldset>
-</form></div>
-</div>
-</div><br>
-<a href="#" class="top">Back to top</a>
+<!--contact-->
+<div class="section" id="contact">
+  <div class="sectionheader">CONTACT US</div>
+  <div class="row">
+    <div class="col-sm-12 col-md-4">
+      <h3>Our location</h3>
+        <p>We are a convenient 2 minutes walk from Kent Ridge MRT. Free parking is also available at the open air carpark next to us.</p>
+        <div><iframe width="400" height="400" src="https://maps.google.com/maps?width=100%&amp;height=450&amp;hl=en&amp;coord=1.3043811,103.772497&amp;q=2%20College%20Ave%20West%2C%20Singapore%20138607+(Ninja%20Gym)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+    </div>
+    <div class="col-sm-12 col-md-4">
+      <h3>Come try us out!</h3>
+            <p>Start your Ninja journey with a Complimentary Introductory Class of your choice! Experience and learn the basic techniques with our professional instructors - we guaranteed you will be hooked!</p>
+            <ul>
+              <li><a href=""><i class="fas fa-envelope-open-text" id="fa"></i></a>  ninjagymsg@gmail.com</li>
+              <li><a href="#"><i class="fab fa-facebook" style="color:#3b5998" id="fa"></i></a> facebook.com/fightclub</li>
+              <li><a href="#"><i class="fab fa-twitter" style="color:#1da1f2" id="fa"></i></a>   https://t.co/HyNW4tByaR</li>
+              <li><a href="#"><i class="fab fa-instagram" style="color:red" id="fa"></i></a>  @fightclubsg</li>
+              <li><a href="#"><i class="fas fa-phone-volume" style="color:lime"  id="fa"></i></a>  +65 9480 8908</li>
+              <li><a href="#"><i class="far fa-clock" style="color:orange"  id="fa"></i></a> Fri - Tues: 8am to 9pm </li>
+              <li id="hidden"><a href="#"><i class="far fa-clock" style="color:transparent"  id="fa"></i></a> Wed - Thurs: 8am to 6pm </li>
+            </ul>
+    </div>
+    <div class="col-sm-12 col-md-4" id="linkForm">
+      <h3>Contact form</h3>
+          <p>Or if you prefer, leave your contact information and we will get back to you ASAP.</p>
+          <div class="contactform">
+          <form action="#" method="GET">
+            <fieldset>
+              <input id="firstname" name="firstname" type="text" placeholder="Name" required><br><br>
+              <input id="lastname" name="lastname" type="text" placeholder="Surname" required><br><br>
+              <input id="phone" name="phone" type="number" maxlength="8" minlength="8" placeholder="Mobile number" required><br><br>
+              <input id="email" name="email" placeholder="Email address" required><br><br>
+              <label for="time">*Experience level:</label>
+              <select name="experience" id="experience">
+                <option value="beginner"></option>
+                <option value="beginner">Beginner</option>
+                <option value="some">Some boxing experience</option>
+                <option value="expert">Expert</option>
+                <option value="competition">Competition level</option>
+              </select> <br><br>
+              <textarea rows="6" cols="52" placeholder="Ask away"></textarea><br><br>
+              <input type="submit" value="Submit">
+            </fieldset>
+          </form>
+        </div>
+    </div>
+  </div>
 </div>
 </body>
 </html>
