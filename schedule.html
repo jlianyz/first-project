@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Orbitron:700|Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eaedda9ae5.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <!--navbar-->
+  
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbar">
+    <a class="navbar-brand" href="index.html"><img src="images/ninjagymlogo.JPG" class="linkHome"></a>
+    <ul class="navbar-nav w-100 nav-justified mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html"><i class="fas fa-house-damage" id="fa"></i> Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gym.html"><i class="fas fa-dumbbell" id="fa"></i> The Gym</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="instructors.html"><i class="fas fa-user-friends" id="fa"></i> Instructors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pricing.html"><i class="fas fa-dollar-sign" id="fa"></i>Our rates</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="schedule.html"><i class="fas fa-fist-raised" id="fa"></i> Timetable</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html"><i class="fas fa-file-signature" id="fa"></i> Contact us</a>
+      </li>
+    </ul>
+  </div>
+</nav>  
+<!--schedule-->
+<div class="section"><br><br>
+  <div class="sectionheader">CLASS SCHEDULE</div>
+  <div class="row">
+    <div class="col-sm-12">
+  <p>Each course at Ninja Gym has been carefully developed in order to maximize your learning in the least amount of time. All age groups, genders, skill levels, and fitness levels are welcome. Classes are limited to 15 participants per session to ensure that everyone gets personalized attention from our instructors.</p>
+ </div>
+    <div class="col-sm-12 d-sm-block d-md-none btn-group" role="group" id="parent">
+    <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+      Mon
+    </button>
+    <div class="dropdown-menu">
+      <table class="dropdown-item table-hover">
+  <tr>
+    <th>Time</th>
+    <th>Class</th>
+    <th>Instructor</th>
+  </tr>
+  <tr>
+    <td>8 - 9 am</td>
+    <td>Muay Thai</td>
+    <td>Felix</td>
+  </tr>
+  <tr>
+    <td>12.30 - 1.30pm</td>
+    <td>MMA</td>
+    <td>Sam</td>
+  </tr>
+  <tr>
+    <td>5 - 6 pm</td>
+    <td>Ju-jitsu</td>
+    <td>Mark</td>
+  </tr>
+  <tr>
+    <td>7.30 - 8.30 pm</td>
+    <td>Taekwando</td>
+    <td>Felix</td>
+  </tr>
+	</table>
+    </div>
+  </div>
+    <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Tue
+    </button>
+    <div class="dropdown-menu">
+      <table class="dropdown-item table-hover">
+      <tr>
+    <th>Time</th>
+    <th>Class</th>
+    <th>Instructor</th>
+  </tr>
+  <tr>
+    <td>8.30 - 9.30 am</td>
+    <td>Muay Thai</td>
+    <td>John</td>
+  </tr>
+  <tr>
+    <td>12 - 1pm</td>
+    <td>Muay Thai</td>
+    <td>John</td>
+  </tr>
+  <tr>
+    <td>5 - 6 pm</td>
+    <td>Taekwando</td>
+    <td>Felix</td>
+  </tr>
+  <tr>
+    <td>8 - 9 pm</td>
+    <td>Muay Thai</td>
+    <td>John</td>
+  </tr>
+        </table>
+    </div>
+  </div>
+    <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+      Wed
+    </button>
+    <div class="dropdown-menu table-hover">
+      <table class="dropdown-item">
+      <tr>
+    <th>Time</th>
+    <th>Class</th>
+    <th>Instructor</th>
+  </tr>
+  <tr>
+    <td>8 - 9 am</td>
+    <td>Ju-jitsu</td>
+    <td>Mark</td>
+  </tr>
+  <tr>
+    <td>12.30 - 1.30pm</td>
+    <td>Karate</td>
+    <td>Jack</td>
+  </tr>
+  <tr>
+    <td>2.30 - 3.30 pm</td>
+    <td>Boxing</td>
+    <td>Patrick</td>
+  </tr>
+  <tr>
+    <td>5 - 6 pm</td>
+    <td>Muay Thai</td>
+    <td>John</td>
+  </tr>
+        </table>
+    </div>
+  </div>
+    <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Thu
+    </button>
+    <div class="dropdown-menu">
+      <table class="dropdown-item table-hover">
+     <tr>
+    <th>Time</th>
+    <th>Class</th>
+    <th>Instructor</th>
+  </tr>
+  <tr>
+    <td>8 - 9 am</td>
+    <td>MMA</td>
+    <td>Sam</td>
+  </tr>
+  <tr>
+    <td>12 - 1 pm</td>
+    <td>Taekwando</td>
+    <td>Felix</td>
+  </tr>
+  <tr>
+    <td>2.30 - 3.30 pm</td>
+    <td>JMuay Thai</td>
+    <td>John</td>
+  </tr>
+  <tr>
+    <td>5 -6 pm</td>
+    <td>Karate</td>
+    <td>Jack</td>
+  </tr>
+        </table>
+    </div>
+  </div>
+    <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Fri
+      </button>
+    <div class="dropdown-menu dropdown-menu-right">
+      <table class="dropdown-item table-hover">
+    <tr>
+    <th>Time</th>
+    <th>Class</th>
+    <th>Instructor</th>
+  </tr>
+  <tr>
+    <td>8.30 - 9.30 am</td>
+    <td>Karate</td>
+    <td>Jack</td>
+  </tr>
+  <tr>
+    <td>12.30 - 1.30pm</td>
+    <td>Boxing</td>
+    <td>Patrick</td>
+  </tr>
+  <tr>
+    <td>5 - 6 pm</td>
+    <td>Boxing</td>
+    <td>Patrickk</td>
+  </tr>
+  <tr>
+    <td>8 - 9 pm</td>
+    <td>Ju-jitsu</td>
+    <td>Mark</td>
+  </tr>
+        </table>
+    </div>
+  </div>
+    <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Sat
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+      <table class="dropdown-item table-hover">
+     <tr>
+    <th>Time</th>
+    <th>Class</th>
+    <th>Instructor</th>
+  </tr>
+  <tr>
+    <td>9 - 10.30 am</td>
+    <td>Boxing</td>
+    <td>Patrick</td>
+  </tr>
+  <tr>
+    <td>11.30 - 12.30pm</td>
+    <td>Group sparring</td>
+    <td>Jack</td>
+  </tr>
+  <tr>
+    <td>5.30 - 6.30 pm</td>
+    <td>Ju-jitsu</td>
+    <td>Mark</td>
+  </tr>
+  <tr>
+    <td>7.30 - 8.30 pm</td>
+    <td>Karate</td>
+    <td>Jack</td>
+  </tr>
+        </table>
+    </div>
+  </div>
+    <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Sun
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+      <table class="dropdown-item table-hover">
+<tr>
+    <th>Time</th>
+    <th>Class</th>
+    <th>Instructor</th>
+  </tr>
+  <tr>
+    <td>9 - 10.30 am</td>
+    <td>MMA</td>
+    <td>Sam</td>
+  </tr>
+  <tr>
+    <td>11.30 - 12.30pm</td>
+    <td>Group sparring</td>
+    <td>Felix</td>
+  </tr>
+  <tr>
+    <td>6.30 - 7.30 pm</td>
+    <td>MMA</td>
+    <td>Sam</td>
+  </tr>
+  <tr>
+    <td>8 - 9 pm</td>
+    <td>Boxing</td>
+    <td>Patrick</td>
+  </tr>
+        </table>
+    </div>
+  </div>
+</div>
+</div>
+    <div class="space"><br><br><br><br><br><br><br></space></div>
+  <div class="row" id="table">
+    <div class="col-sm-12 table-responsive">
+    <table class="schedule">
+    <thead>
+    <tr>
+      <th class="headrow"></th>
+      <th class="headrow">Monday</th>
+      <th class="headrow">Tuesday</th>
+      <th class="headrow">Wednesday</th>
+      <th class="headrow">Thursday</th> 
+      <th class="headrow">Friday</th>
+      <th class="headrow">Saturday</th>
+      <th class="headrow">Sunday</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th rowspan="2" class="headcol">8.00 am</th>
+      <td rowspan="2" class="tkd">Taekwando<br>Felix<br>8-9 am</td>
+      <td></td>
+      <td rowspan="2" class="jjs">Ju-Jitsu<br>Mark<br>8-9 am</td>
+      <td rowspan="2" class="mma">MMA<br>Sam<br>8-9 am</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="muaythai">Muay Thai<br>John<br>8.30-9.30 am</td>
+      <td rowspan="2" class="karate">Karate<br>Jack<br>8.30-9.30 am</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">9.00 am</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td rowspan="3" class="boxing">Boxing<br>Patrick<br>9-10.30 am</td>
+      <td rowspan="3" class="mma">MMA<br>Sam<br>9-10.30 am</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">10.00 am</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">11.00 am</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td rowspan="2" class="special">Group sparring<br>Jack<br>11.30-12.30pm</td>
+      <td rowspan="2" class="special">Group sparring<br>Felix<br>11.30-12.30pm</td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">12.00 pm</th>
+      <td></td>
+      <td rowspan="2" class="muaythai">Muay Thai<br>John<br>12-1 pm</td>
+      <td></td>
+      <td rowspan="2" class="tkd">Taekwando<br>Felix<br>12-1 pm</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="mma">MMA<br>Sam<br>12.30-1.30 pm</td>
+      <td rowspan="2" class="karate">Karate<br>Jack<br>12.30-1.30 pm</td>
+      <td rowspan="2" class="boxing">Boxing<br>Patrick<br>12.30-1.30pm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">1.00 pm</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">2.00 pm</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td rowspan="2" class="boxing">Boxing<br>Patrick<br>2.30-3.30 pm</td>
+      <td rowspan="2" class="muaythai">Muay Thai<br>John<br>2.30-3.30 pm</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">3.00 pm</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">4.00 pm</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">5.00 pm</th>
+      <td rowspan="2" class="jjs">Ju-jitsu<br>Mark<br>5-6 pm</td>
+      <td rowspan="2" class="tkd">Taekwando<br>Felix<br>5-6 pm</td>
+      <td rowspan="2" class="muaythai">Muay Thai<br>John<br>5-6 pm</td>
+      <td rowspan="2" class="karate">Karate<br>Jack<br>5-6 pm</td>
+      <td rowspan="2" class="boxing">Boxing<br>Patrick<br>5-6 pm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="jjs">Ju-Jitsu<br>Mark<br>5.30-6.30 pm</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">6.00 pm</th>
+      <td></td>
+      <td></td>
+      <td rowspan="6" class="closed">Closed</td>
+      <td rowspan="6" class="closed">Closed</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td rowspan="2" class="mma">MMA<br>Sam<br>6.30-7.30 pm</td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">7.00 pm</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+     </tr>
+     <tr>
+      <td rowspan="2" class="tkd">Taekwando<br>Felix<br>7.30-8.30 pm</td>
+      <td></td>
+      <td></td>
+      <td rowspan="2" class="karate">Karate<br>Jack<br>7.30-8.30 pm</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2" class="headcol">8.00 pm</th>
+      <td rowspan="2" class="muaythai">Muay Thai<br>John<br>8-9 pm</td>
+      <td rowspan="2" class="jjs">Ju-Jitsu<br>Mark<br>8-9 pm</td>
+      <td rowspan="2" class="boxing">Boxing<br>Patrick<br>8-9 pm</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    </tbody>
+</table>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+    </body>
+    </html>
