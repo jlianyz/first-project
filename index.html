@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Orbitron:700|Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Orbitron:700|Baloo&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/eaedda9ae5.js"></script>
 </head>
 <body>
@@ -49,9 +49,11 @@
   <div class="container">
     <br><br><br><br>
     <h1 class="display-4">Ninja Gym</h1><br><br>
-    <p class="lead">The ultimate fight experience</p><br><br><br>
+    <p class="lead">The ultimate fight experience</p><br>
      <div class="d-sm-block d-md-none">
-      <a class="button" href="#linkForm">Book a free trial!</a></div>
+      <a class="button" href="#linkForm" id="new">Book a free trial</a>
+      <a class="button" href="schedule.html" id="existing">Find a class</a>
+      </div>
   <!--for desktop-->
   <div class="d-none d-md-block">
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg" id="freeTrial">
@@ -60,7 +62,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-      Come check out our gym and enjoy a free trial class!
+      SIGN UP NOW!
           <button type="button" id="close" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body">
@@ -100,8 +102,12 @@
 </div>
 <div class="hiddenMD">
 <!--gym-->
+<div class="jumbotron jumbotron-fluid" id="Header">
+  <div class="container">
+    <h3 class="display-4">THE GYM</h3>
+  </div>
+</div>
 <div class="section" id="gym">
-  <div class="sectionheader">THE GYM</div>
 <div class="row">
   <div class="col-sm-12 d-sm-block d-md-none">
     <img src="images/gym1.jpg" alt="gym1" style="width:100%">
@@ -163,8 +169,8 @@
 </div>
   <div class="col-sm-12 col-md-6 d-inline-block">
     <h3>Our facilities</h3>
-    <ul id="gym">
-      <li>State-of-the-art cardiovascular, free weights and resistance training equipment</li>
+    <ul>
+      <li>State-of-the-art cardiovascular and resistance training equipment</li>
       <li>2 boxing rings</li>
       <li>Lounge area with phone charging stations</li>
       <li>Rental shoe lockers</li>
@@ -281,8 +287,12 @@
 </div>
 </div>
 <!--instructors-->
+<div class="jumbotron jumbotron-fluid" id="Header">
+  <div class="container">
+    <h3 class="display-4">OUR INSTRUCTORS</h3>
+  </div>
+</div>
 <div class="section" id="instructors">
-  <div class="sectionheader">OUR INSTRUCTORS</div>
   <div class="row">
     <div class="col-sm-12">
       <h3>Our instructors</h3>
@@ -405,8 +415,12 @@
   </div>
 </div>  
 <!--pricing-->
+<div class="jumbotron jumbotron-fluid" id="Header">
+  <div class="container">
+    <h3 class="display-4">OUR RATES</h3>
+  </div>
+</div>
 <div class="section" id="pricing">
-  <div class="sectionheader">OUR RATES</div>
   <div class="row">
     <div class="column" id="pricelist">
       <h3>Single class</h3>
@@ -437,8 +451,12 @@
   </div>
 </div>
 <!--schedule-->
-<div class="section">
-  <div class="sectionheader">CLASS SCHEDULE</div>
+<div class="jumbotron jumbotron-fluid" id="Header">
+  <div class="container">
+    <h3 class="display-4">CLASS SCHEDULE</h3>
+  </div>
+</div>
+<div class="section" id="schedule">
   <div class="row">
   <div class="col-sm-12">
   <p>Each course at Ninja Gym has been carefully developed in order to maximize your learning in the least amount of time. All age groups, genders, skill levels, and fitness levels are welcome. Classes are limited to 15 participants per session to ensure that everyone gets personalized attention from our instructors.</p>
@@ -914,8 +932,12 @@
     </div>
   </div>
 <!--contact-->
+<div class="jumbotron jumbotron-fluid" id="Header">
+  <div class="container">
+    <h3 class="display-4">CONTACT US</h3>
+  </div>
+</div>
 <div class="section" id="contact">
-  <div class="sectionheader">CONTACT US</div>
   <div class="row">
     <div class="col-sm-12 col-md-4">
       <h3>Our location</h3>
@@ -926,7 +948,7 @@
       <h3>Come try us out!</h3>
             <p>Start your Ninja journey with a Complimentary Introductory Class of your choice! Experience and learn the basic techniques with our professional instructors - we guaranteed you will be hooked!</p>
             <ul>
-              <li><a href=""><i class="fas fa-envelope-open-text" id="fa"></i></a>  ninjagymsg@gmail.com</li>
+              <li><a href="mailto:someone@example.com"><i class="fas fa-envelope-open-text" id="fa"></i></a>  ninjagymsg@gmail.com</li>
               <li><a href="#"><i class="fab fa-facebook" style="color:#3b5998" id="fa"></i></a> facebook.com/fightclub</li>
               <li><a href="#"><i class="fab fa-twitter" style="color:#1da1f2" id="fa"></i></a>   https://t.co/HyNW4tByaR</li>
               <li><a href="#"><i class="fab fa-instagram" style="color:red" id="fa"></i></a>  @fightclubsg</li>
