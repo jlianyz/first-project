@@ -1,0 +1,566 @@
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:black; 
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black; 
+}
+/*navbar*/
+ #fa {
+    margin: 0 10px 0 0;
+}
+.navbar {
+  background-color:black;
+  padding:0 1em;
+}
+.nav-item {
+  text-align:center;
+}
+
+/*overwrite bootstrap css*/
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-family:'Lexend Deca', sans-serif;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: cyan;
+}
+.navbar-dark .navbar-toggler-icon {
+    background-image: url('../images/ninjagymlogo.JPG');
+    width:120px;
+}
+ #fa {
+    margin: 0 10px 0 0;
+}
+/*jumbotron*/
+.jumbotron {
+  background-image:url("../images/lpsmall.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  height:auto;
+  text-align:center;
+  margin:0 auto;
+}
+.jumbotron h1 {
+  font-family:'Baloo', sans-serif;
+  font-size:4em;
+  color:white;
+}
+.jumbotron p {
+  font-size:1.5em;
+  color:white;
+  font-family:'Baloo', sans-serif;
+}
+ .jumbotron #freeTrial, .jumbotron #new {
+    font-family: 'Lexend Deca', sans-serif; 
+    background-color:#8B0000;
+    padding:15px;
+    text-decoration:none;
+    font-size:12px;
+    border:none;
+    color:white;
+  }
+
+ .jumbotron #existing, .enquire {
+    font-family: 'Lexend Deca', sans-serif; 
+    background-color:white;
+    padding:15px 28px;
+    text-decoration:none;
+    font-size:12px;
+    color:#8B0000;
+  }
+  .modal-content {
+    top:50px;
+    width:500px;
+    height:330px;
+    border:10px solid white;
+    background-image:url('../images/modal.jpg');
+    color:white;
+    padding:5px;
+    text-align:left;
+  }
+  .modal-header {
+    font-weight:bolder;
+    font-size:32px;
+    font-family:'Baloo', sans-serif;
+  }
+  .modal-body:{
+    font-size:10px;
+    font-family:'Lexend Deca', sans-serif;
+  }
+  .modal-body input,textarea {
+  padding:5px;
+  font-family:'Lexend Deca', sans-serif;
+  font-size:12px;
+  width:210px;
+}
+  .jumbotron #close {
+    color:white;
+    border:none;
+    padding:none;
+    background:transparent;
+  }
+  #desc {
+    
+      margin:0 auto;
+  }
+  #coverPage1 {
+      background-color:#383838;
+      padding:30px;
+      margin:0 auto;
+  }
+  #coverPage2 {
+      background-color:#484848;
+      padding: 30px;
+      margin:0 auto;
+  }
+  #coverPage3 {
+     background-color:#585858;
+     padding: 30px;
+     margin:0 auto;
+  }
+  #coverPage1 h4, #coverPage2 h4, #coverPage3 h4 {
+      font-family: 'Orbitron', sans-serif;
+      color:white;
+      letter-spacing:2px;
+      text-align:center;
+  }
+    #coverPage1 p, #coverPage2 p, #coverPage3 p {
+      font-family: 'Lexend Deca', sans-serif;
+      color:white;
+      line-height:1.5em;
+  }
+  #desc .button {
+      font-family: 'Lexend Deca', sans-serif; 
+    background-color:black;
+    padding:15px;
+    text-decoration:none;
+    border:2px white solid;
+    font-size:12px;
+    color:white;
+    margin:0 auto;
+  }
+  /*GYM*/
+  .section {
+    padding:2px;
+  }
+  #Header {
+    background-image: linear-gradient(black,white,black);
+    width:100%;
+    background-attachment: fixed;
+    }
+    #Header h3 {
+      color:#8B0000;
+      font-family:'Baloo', sans-serif;
+    }
+    
+  #gym {
+  background-color:rgb(220,220,220);
+}
+.row {
+  margin:10px 0;
+}
+.section h3 {
+  font-family:'Lexend Deca', sans-serif;
+  color:#660066;
+  font-weight:bolder;
+  letter-spacing:2px;
+}
+.section p {
+  font-family:'Lexend Deca', sans-serif;
+  color:black;
+  line-height:2em;
+  text-align:justify;
+}
+#gym ul {
+  font-family:'Lexend Deca', sans-serif;
+  color:black;
+  line-height:2em;
+}
+#accordion {
+  width:90vw;
+  margin:0 auto;
+}
+.card-body {
+  font-family:'Lexend Deca', sans-serif;
+  color:white;
+  line-height:2em;
+}
+.card {
+  background-color:	#606060;
+     border:1px solid white;
+}
+.card button {
+  color:white;
+  font-family:'Lexend Deca', sans-serif;
+}
+.card button:hover {
+  text-decoration:none;
+  color:#8B0000;
+}
+/*instructors*/
+#instructors {
+  background-color:rgb(211,211,211);
+}
+.flip-card {
+  background-color: transparent;
+  max-width: 400px;
+  height: 400px;
+  perspective: 1000px;
+  margin:10px auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: black;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card-back h2 {
+  padding-top:15px;
+  font-family:'Orbitron', sans-serif;
+}
+.flip-card-back h6 {
+  font-family:'Lexend Deca', sans-serif;
+}
+.flip-card-back ul li {
+  line-height:2em;
+  text-align:left;
+  margin-top:2px;
+  font-family:'Lexend Deca', sans-serif;
+}
+
+/*pricing*/
+#pricing {
+  background-color:rgb(192,192,192);
+  }
+#pricelist {
+  background-color:rgba(139,0,139,0.2);
+  margin:5px;
+  width:100%;
+  padding:10px;
+  border-radius:5%;
+  z-index:99;
+  }
+  #pricelist h3 {
+    color:white;
+    font-family:'Lexend Deca', sans-serif;
+    font-weight:bolder;
+    text-align:center;
+  }
+  #pricelist p {
+  color:black;
+  font-family:'Lexend Deca', sans-serif;
+  font-weight:bolder;
+  text-align:center;
+  }
+#price {
+  border:black solid 4px;
+  border-radius: 100%;
+  background: #66fcf1;
+  color:black;
+  font-family:'Lexend Deca', sans-serif;
+  width: 100px;
+  height: 100px; 
+  font-weight:bolder;
+  margin:0 auto;
+  font-size:2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#corporate {
+  padding-left:0;
+}
+/*schedule*/
+#schedule {
+  background-color:rgb(211,211,211);
+}
+#table table,th,td {
+  font-family: 'Lexend Deca', sans-serif;
+  border-collapse:collapse;
+  text-align:center;
+  padding:5px;
+  width:auto;
+  margin:0 auto;
+  }
+  .headcol {
+  position:sticky;
+  left: 0;
+  top: auto;
+  }
+  .headrow {
+    position:sticky;
+    top:0;
+  }
+#table table {
+   width: 90% ;
+   table-layout:fixed;
+   overflow-x:scroll;
+   border: silver solid 1px;
+}
+#table th {
+  color:#66fcf1;
+  font-size: 24px;
+  height:40px;
+  width:150px;
+  border: silver solid 1px;
+  background-color:black;
+    }
+ #table td {
+  color:white;
+  border: silver solid 1px;
+  height:40px;
+  width:150px;
+  background-color:black;
+    }
+  #table .mma {
+    background-color:yellow;
+    color:black;
+  }
+  #table .tkd {
+    background-color:pink;
+    color:black;
+  }
+  #table .jjs {
+    background-color:greenyellow;
+    color:black;
+  }
+  #table .karate {
+    background-color:lightskyblue;
+    color:black;
+  }
+  #table .boxing {
+    background-color:orange;
+    color:black;
+  }
+  #table .muaythai {
+    background-color:aquamarine;
+    color:black;
+  }
+  #table .closed {
+    background-color:red;
+    color:black;
+  }
+  #table .special {
+    background-image:linear-gradient(to right, grey,indigo);
+    color:white;
+  }
+  #parent {
+    background-color:rgba(0,191,255,0.3);
+     justify-content:center;
+    display: flex;
+    align-items: center;
+  }
+  .dropdown-menu-center {
+  left: 50%;
+  right: auto;
+  top:25px;
+  text-align: center;
+  transform: translate(-50%, 0);
+}
+#btnGroupDrop1 {
+  font-family:'Lexend Deca', sans-serif;
+  font-size:12px;
+  background-color:black;
+}
+.dropdown-menu, .dropdown-item {
+  background-color:#606060;
+}
+.dropdown-item {
+  color:white;
+  font-size:12px;
+}
+/*contact*/
+#contact {
+  background-color:rgb(220,220,220);
+}
+#contact ul {
+  list-style-type:none;
+  margin:0 auto;
+  padding:0px;
+}
+#contact ul li {
+  padding:10px;
+  color:#C21460;
+  font-family:'Lexend Deca', sans-serif;
+  }
+
+.contactus {
+  padding:20px 0 0 30px;
+  }
+#contactform {
+  color:black;
+  margin:0 auto;
+  left:0;
+}
+fieldset label,input {
+  padding:5px;
+  font-family:'Lexend Deca', sans-serif;
+  color:black;
+}
+input,textarea {
+  width:350px;
+  border:#66fcf1 1px solid;
+  border-radius:3px;
+  color:black;
+}
+select {
+  width:200px;
+  border:#66fcf1 1px solid;
+  border-radius:3px;
+}
+input[type=submit] {
+  color:black;
+  background-color:white;
+  border:2px #66fcf1 solid;
+  border-radius:3px;
+}
+select, select option {
+  color:black;
+  font-family:'Lexend Deca', sans-serif;
+}
+@media only screen and (min-width: 600px) {
+  .jumbotron {
+    background-attachment:fixed;
+    background-image:url("../images/lpbig.jpg");
+    height:auto;
+    padding:13rem 2rem;
+  }
+   #pricelist {
+    width:32%;
+  }
+#corporate {
+  padding-right:15px;
+}
+  .space {
+    display:none;
+  }
+  .hiddenMD {
+    display:none;
+  }
+  #gymHeader {
+    background-image:url("../images/gym-bg.jpg");
+    background-attachment: fixed;
+  }
+  .jumbotron h3 {
+     color:white;
+     font-family:'Baloo', sans-serif;
+  }
+  #instHeader {
+    background-image:url("../images/gym-bg2.jpg");
+    background-attachment: fixed;
+  }
+  #priceHeader {
+    background-image:url("../images/gym-bg3.jpg");
+    background-attachment: fixed;
+  }
+  #timeHeader {
+    background-image:url("../images/gym-bg4.jpg");
+    background-attachment: fixed;
+  }
+  #contactHeader {
+    background-image:url("../images/gym-bg5.jpg");
+    background-attachment: fixed;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #table {
+    display:none;
+  }
+  #video {
+    display:none;
+  }
+  #pricing {
+    padding-bottom:20px;
+  }
+  #corporate {
+    padding-left:10px;
+  }
+#gymcarousel {
+  display:none;
+}
+.linkHome {
+  display:none;
+}
+.flip-card {
+  width:280px;
+  height:280px;
+}
+.sectionheader {
+  font-size:1.2em;
+}
+iframe {
+  width:280px;
+  height:280px;
+}
+select {
+  width:130px;
+}
+input,textarea {
+  width:280px;
+}
+#btnGroupDrop1 {
+  font-family:'Lexend Deca', sans-serif;
+  font-size:8px;
+  background-color:black;
+}
+.flip-card-back h2 {
+  padding-top:15px;
+  font-size:20px;
+  font-family:'Orbitron', sans-serif;
+}
+.flip-card-back h6 {
+  font-family:'Lexend Deca', sans-serif;
+  font-size:16px;
+}
+.flip-card-back ul li {
+  line-height:2em;
+  font-size:12px;
+  text-align:left;
+  margin-top:2px;
+  font-family:'Lexend Deca', sans-serif;
+}
+}
