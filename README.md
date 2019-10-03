@@ -107,18 +107,19 @@ The site is tested to be responsive for
 * Edge
 * IE
 
+Basic checks include:
+* Inputting data into the forms and ensuring that if required fields are not completed, the user will be prompted to fill in the missing fields. If a phone number with more than 8 digits is entered, or if an invalid email address is entered, an error message will pop up.
+* Checking that the images do not extend beyond the width for each of the abovementioned devices.
+* Ensuring that all the links work and all buttons redirect users to the right pages
+* Ensuring that forms are working - I used [Formspree](https://formspree.io/) to connect forms to an email address.
+* Ensuring that the site looks consistent across all major browsers (IE, Chrome, Safari, Firefox, Edge) and mobile devices of various sizes (extra small mobile screen, average mobile screen, iPad and iPad pro screens)
+* Checked that there were no grammatical errors, the right images were showing up at the right places (eg. the image carousel shows in large devices and is hidden in mobile devices) and that content was easy to read
+
 During testing, it was found that the flip card does not work on IE. When flipped to the back, the image rotated 180 degrees but the text did not show up.  
 
 Also, for tablets, it was found that the video and google Maps iframes were not responsive and overlapped into adjacent columns. As such, I wrapped them in a div and made the div responsive. 
 ***
 ### Deployment
-For deployment, I completed the following checks:
-
-* Ensuring that all the links work and all buttons redirect users to the right pages
-* Ensuring that forms are working - I used [Formspree](https://formspree.io/) to connect forms to an email address.
-* Ensuring that the site looks consistent across all major browsers (IE, Chrome, Safari, Firefox, Edge) and mobile devices of various sizes (extra small mobile screen, average mobile screen, iPad and iPad pro screens)
-* Checked that there were no grammatical errors, the right images were showing up at the right places and that content was easy to read
-
 This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
 ***
 ### Credits
@@ -133,3 +134,10 @@ All photos were taken from [Pexels](https://www.pexels.com/), a stock image libr
 **Google Maps**
 
 I used this [Google Maps generator](https://www.maps.ie/create-google-map/)
+
+**Coloured scrollbar**
+
+I adapted the scrollbar code from [W3 schools](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp)
+
+**Flip card**
+I adapted the flip card code from [W3 schools](https://www.w3schools.com/howto/howto_css_flip_card.asp)
