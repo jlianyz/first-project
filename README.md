@@ -43,8 +43,8 @@ As an existing gym member, I want to:
 * **Landing page experience** – when users first come to the page, they see a large, eye catching boxing-related image with a call to action to book a trial (modal popup for desktop version, links to contact form/ class schedule in mobile version). There are no slow-to-load items, eg, videos, and for the desktop version, there are three columns following the image for easy navigation to the information they would most likely want to access: Info about the gym facilities, Class schedule, and Quality of instructors. There is a sticky navbar at the top for every page
 * **Content** – Text is kept to the minimum to ensure readers only have to read what they are interested in. To keep the layout clean, text-heavy descriptions are hidden in accordions, flip back cards and drop down tables
 * **Text hierarchy** – Headers for each section are positioned in a dark-background, fixed attachment jumbotron to make them stand out. This is consistent across all sections. For sub headers and paragaphs, they are in uniform colors (purple and black respectively) across all sections. 
-* **Call to action** – One primary purpose of the website is to get members to sign up. There are several touchpoints where users can do this: At the landing page, on the price rates page, and at the contact form. The buttons are uniformly styled to ensure a consistent user experience, and the submit buttons are in different colours to bring attention to them.
-
+* **Call to action** – One primary purpose of the website is to get members to sign up. There are several touchpoints where users can do this: At the landing page, on the price rates page, and at the contact form. The buttons are uniformly styled to ensure a consistent user experience, and the submit buttons are in different colours to bring attention to them. When users click on the email link, there is a mailto link to open their default mail program.
+***
 ### UI and Features
 The website has been designed to be responsive for all media forms (Mobile, tablet and laptop)
 
@@ -80,7 +80,7 @@ The website has been designed to be responsive for all media forms (Mobile, tabl
 * A color coded table makes the class schedule information interesting to look at, while still being functional
 * Images of the gym are shown in a carousel, with the option for users to click to speed up the rate at which images change.
 * A modal is added on the landing page, which users can easily close either by click on the “x” or outside of the modal. The contact form here requires less information to be filled than the full form on the Contact page so that users are less likely to navigate away from the first page. (If they had reached the contact page, it is likely that they are strongly keen in registering their interest)
-
+***
 ### Technologies
 1. HTML
 2. CSS
@@ -88,14 +88,14 @@ The website has been designed to be responsive for all media forms (Mobile, tabl
 4. Font Awesome
 5. Google Fonts
 6. Google Maps iframe
- 
+ ***
 ### Features Left to Implement
 In the future, I would like to 
 * Allow users to book classes online, and also make the timetable more dynamic by allowing users to select the day from a drop down and only see the relevant classes.
 * Include an articles/ blog post section
 * Have a live chat bot
 * Include users testimonials
-
+***
 ### Testing
 The site is tested to be responsive for 
 * Iphone 5/6/7/8
@@ -110,16 +110,17 @@ The site is tested to be responsive for
 During testing, it was found that the flip card does not work on IE. When flipped to the back, the image rotated 180 degrees but the text did not show up.  
 
 Also, for tablets, it was found that the video and google Maps iframes were not responsive and overlapped into adjacent columns. As such, I wrapped them in a div and made the div responsive. 
-
+***
 ### Deployment
 For deployment, I completed the following checks:
 
 * Ensuring that all the links work and all buttons redirect users to the right pages
+* Ensuring that forms are working - I used [Formspree](https://formspree.io/) to connect forms to an email address.
 * Ensuring that the site looks consistent across all major browsers (IE, Chrome, Safari, Firefox, Edge) and mobile devices of various sizes (extra small mobile screen, average mobile screen, iPad and iPad pro screens)
 * Checked that there were no grammatical errors, the right images were showing up at the right places and that content was easy to read
 
 This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
-
+***
 ### Credits
 **Content**
 
