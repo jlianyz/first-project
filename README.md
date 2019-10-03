@@ -5,8 +5,8 @@ This is a website for Ninja Gym, an imaginary boxing gym, to attract boxing enth
 
 **1. The gym**
   * List of facilities
-  *Photos of the gym and members
-  *Details of classes 
+  * Photos of the gym and members
+  * Details of classes 
   
 **2. Instructors background**
   * Photos of instructors
@@ -17,7 +17,7 @@ This is a website for Ninja Gym, an imaginary boxing gym, to attract boxing enth
   * Corporate plans
   
 **4. Class schedule**
-  * Day by day schedule with classes color coded, and who is teaching the class
+  * Day by day schedule with classes color coded(for desktop), and who is teaching the class
   
 **5. Contact details**
   * Google maps location details
@@ -43,7 +43,7 @@ As an existing gym member, I want to:
 * **Landing page experience** – when users first come to the page, they see a large, eye catching boxing-related image with a call to action to book a trial (modal popup for desktop version, links to contact form/ class schedule in mobile version). There are no slow-to-load items, eg, videos, and for the desktop version, there are three columns following the image for easy navigation to the information they would most likely want to access: Info about the gym facilities, Class schedule, and Quality of instructors. There is a sticky navbar at the top for every page
 * **Content** – Text is kept to the minimum to ensure readers only have to read what they are interested in. To keep the layout clean, text-heavy descriptions are hidden in accordions, flip back cards and drop down tables
 * **Text hierarchy** – Headers for each section are positioned in a dark-background, fixed attachment jumbotron to make them stand out. This is consistent across all sections. For sub headers and paragaphs, they are in uniform colors (purple and black respectively) across all sections. 
-* **Call to action** – One primary purpose of the website is to get members to sign up. There are several touchpoints where users can do this: At the landing page, on the price rates page, and at the contact form. The buttons are uniformly styled to ensure a consistent user experience.
+* **Call to action** – One primary purpose of the website is to get members to sign up. There are several touchpoints where users can do this: At the landing page, on the price rates page, and at the contact form. The buttons are uniformly styled to ensure a consistent user experience, and the submit buttons are in different colours to bring attention to them.
 
 ### UI and Features
 The website has been designed to be responsive for all media forms (Mobile, tablet and laptop)
@@ -62,8 +62,8 @@ The website has been designed to be responsive for all media forms (Mobile, tabl
 * Image carousel is replaced with normal images so that users don’t have to constantly click
 * For section headers, the background is a black and white gradient instead of an image so that the page loads quicker. It is also difficult to find a suitable background image for jumbotrons this small. 
 * Video is removed under the Rates section for quicker loading
-* Features are added to reduce the need to constantly click on page, eg, accordion is removed and images are shown individually
-* A drop down table is used for the timetable. If the desktop version of the schedule was shown, users would have to scroll right and down (since Javacript is not used)
+* Features are added to reduce the need to constantly click on page, eg, image carousel in the Gym section is removed and images are shown individually
+* A drop down table is used for the timetable. If the desktop version of the schedule was shown, users would have to scroll right and down (since Javacript is not used). To ensure that the drop down does not go out of the screen size, they are position differently depending on the day of the week.
 * The modal on the landing page is removed and the button links to the contact form instead, as the modal may take up too much space when clicked on.
 * Images and iframes are all responsive in size
 * Dropdown navbar so that users don’t have to scroll right, and to reduce amount of space taken. If users choose not to use it and just scroll down the page, there is a “Back to top” link so they don’t have to scroll all the way up again.
@@ -99,8 +99,8 @@ In the future, I would like to
 ### Testing
 The site is tested to be responsive for 
 * Iphone 5/6/7/8
-* Ipad
-* Ipad Pro
+* Ipad 
+* Ipad Pro (best viewed in landscape mode)
 * Safari
 * Chrome
 * Firefox
@@ -123,7 +123,7 @@ This site is hosted using GitHub pages, deployed directly from the master branch
 ### Credits
 **Content**
 
-The content was written by me, inspired by Wikipedia various gym websites, namely [Evolve MMA](https://evolve-mma.com)
+The content was written by me, inspired by Wikipedia, various gym websites, namely [Evolve MMA](https://evolve-mma.com)
 
 **Media**
 
