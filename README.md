@@ -72,6 +72,7 @@ The website has been designed to be responsive for all media forms (Mobile, tabl
 * Containers are resized responsively so they fit nicely within iPad and iPad pro
 * Text in navbar is reduced so that the "instructors" word and its Font Awesome icon remain inline
 * Table is shown for the class schedule, and scroll along x-axis is enabled
+* * iPad Pro is best viewed in landscape mode
 
 **Desktop version**
 * Attractive boxing related images are shown in section headers, while still having the text clearly visible as opacity of background image is reduced
@@ -120,7 +121,14 @@ During testing, it was found that the flip card does not work on IE. When flippe
 Also, for tablets, it was found that the video and google Maps iframes were not responsive and overlapped into adjacent columns. As such, I wrapped them in a div and made the div responsive. 
 ***
 ### Deployment
-This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
+This site is hosted using GitHub pages and is deployed from the master branch. Code is written in AWS Cloud 9, and upon committing to the repository, the deployed site will be automatically updated. The file architecture is as such: 
+* A separate folder for the CSS file
+* A separate folder for images
+* A separate folder for Wireframes
+* Individual pages are stored under the main project file
+
+The main landing page is named index.html for the deployed site to show correctly in Github. The other pages are named intuitively by the sections that each is describing.
+
 ***
 ### Credits
 **Content**
@@ -130,6 +138,10 @@ The content was written by me, inspired by Wikipedia, various gym websites, name
 **Media**
 
 All photos were taken from [Pexels](https://www.pexels.com/), a stock image library. The video was taken from [YouTube](https://youtu.be/AJHAUo-1X54)
+
+**Typography**
+
+The fonts used were from [Google Fonts](https://fonts.google.com/), while the icons were from [Font Awesome](https://fontawesome.com/)
 
 **Google Maps**
 

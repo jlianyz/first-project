@@ -1,23 +1,20 @@
+
+/* coloured scrollbar*/
 ::-webkit-scrollbar {
   width: 20px;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
   border-radius: 10px;
 }
- 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background:black; 
   border-radius: 3px;
 }
-
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: black; 
 }
+
 /*navbar*/
  #fa {
     margin: 0 10px 0 0;
@@ -41,6 +38,7 @@
  #fa {
     margin: 0 10px 0 0;
 }
+
 /*jumbotron*/
 .jumbotron {
   background-image:url("../images/lpsmall.jpg");
@@ -62,117 +60,116 @@
   color:white;
   font-family:'Baloo', sans-serif;
 }
- .jumbotron #freeTrial, .jumbotron #new {
-    font-family: 'Lexend Deca', sans-serif; 
-    background-color:#8B0000;
-    padding:15px;
-    text-decoration:none;
-    font-size:12px;
-    border:none;
-    color:white;
-  }
+.jumbotron #freeTrial, .jumbotron #new {
+  font-family: 'Lexend Deca', sans-serif; 
+  background-color:#8B0000;
+  padding:15px;
+  text-decoration:none;
+  font-size:12px;
+  border:none;
+  color:white;
+}
 
- .jumbotron #existing, .enquire {
-    font-family: 'Lexend Deca', sans-serif; 
-    background-color:white;
-    padding:15px 28px;
-    font-weight:bold;
-    text-decoration:none;
-    font-size:12px;
-    color:#8B0000;
-  }
-  .modal-content {
-    top:50px;
-    width:500px;
-    height:330px;
-    border:10px solid white;
-    background-image:url('../images/modal.jpg');
-    color:white;
-    padding:5px;
-    text-align:left;
-  }
-  .modal-header {
-    font-weight:bolder;
-    font-size:32px;
-    font-family:'Baloo', sans-serif;
-  }
-  .modal-body:{
-    font-size:10px;
-    font-family:'Lexend Deca', sans-serif;
-  }
-  .modal-body input,textarea {
+.jumbotron #existing, .enquire {
+  font-family: 'Lexend Deca', sans-serif; 
+  background-color:white;
+  padding:15px 28px;
+  font-weight:bold;
+  text-decoration:none;
+  font-size:12px;
+  color:#8B0000;
+}
+.modal-content {
+  top:50px;
+  width:500px;
+  height:330px;
+  border:10px solid white;
+  background-image:url('../images/modal.jpg');
+  color:white;
+  padding:5px;
+  text-align:left;
+}
+.modal-header {
+  font-weight:bolder;
+  font-size:32px;
+  font-family:'Baloo', sans-serif;
+}
+.modal-body:{
+  font-size:10px;
+  font-family:'Lexend Deca', sans-serif;
+  width:210px;
+}
+.modal-body input,textarea {
   padding:5px;
   font-family:'Lexend Deca', sans-serif;
   font-size:12px;
   width:210px;
 }
-.modal-body #s{
-  padding:5px;
-  font-family:'Lexend Deca', sans-serif;
-  font-size:12px;
-  width:210px;
+.modal-body #submit {
+  color:white;
+  background-color:#8B0000;
 }
-  .jumbotron #close {
-    color:white;
-    border:none;
-    padding:none;
-    background:transparent;
-  }
-  #desc {
-    
-      margin:0 auto;
-  }
-  #coverPage1 {
-      background-color:#383838;
-      padding:50px 20px;
-      margin:0 auto;
-  }
-  #coverPage2 {
-      background-color:#484848;
-      padding: 50px 20px;
-      margin:0 auto;
-  }
-  #coverPage3 {
-     background-color:#585858;
-     padding: 50px 20px;
-     margin:0 auto;
-  }
-  #coverPage1 h4, #coverPage2 h4, #coverPage3 h4 {
-      font-family: 'Orbitron', sans-serif;
-      color:white;
-      letter-spacing:2px;
-      text-align:center;
-  }
-    #coverPage1 p, #coverPage2 p, #coverPage3 p {
-      font-family: 'Lexend Deca', sans-serif;
-      color:white;
-      line-height:2em;
-  }
-  #desc .button {
-      font-family: 'Lexend Deca', sans-serif; 
-    background-color:black;
-    padding:15px;
-    text-decoration:none;
-    border:2px white solid;
-    font-size:12px;
-    color:white;
-    margin:0 auto;
-  }
-  /*GYM*/
+.jumbotron #close {
+  color:white;
+  border:none;
+  padding:none;
+  background:transparent;
+}
+#desc {
+  margin:0 auto;
+}
+#coverPage1 {
+  background-color:#383838;
+  padding:50px 20px;
+  margin:0 auto;
+}
+#coverPage2 {
+  background-color:#484848;
+  padding: 50px 20px;
+  margin:0 auto;
+}
+#coverPage3 {
+  background-color:#585858;
+  padding: 50px 20px;
+  margin:0 auto;
+}
+#coverPage1 h4, #coverPage2 h4, #coverPage3 h4 {
+  font-family: 'Orbitron', sans-serif;
+  color:white;
+  letter-spacing:2px;
+  text-align:center;
+}
+#coverPage1 p, #coverPage2 p, #coverPage3 p {
+  font-family: 'Lexend Deca', sans-serif;
+  color:white;
+  line-height:2em;
+}
+#desc .button {
+  font-family: 'Lexend Deca', sans-serif; 
+  background-color:black;
+  padding:15px;
+  text-decoration:none;
+  border:2px white solid;
+  font-size:12px;
+  color:white;
+  margin:0 auto;
+}
+
+/*GYM*/
   .section {
     padding:2px;
   }
-  #Header1, #Header2, #Header3, #Header4, #Header5 {
-    background-image: linear-gradient(black,white,black);
-    width:100%;
-    background-attachment: fixed;
-    }
-  .jumbotron h3 {
-      color:#8B0000;
-      font-family:'Baloo', sans-serif;
-    }
+#Header1, #Header2, #Header3, #Header4, #Header5 {
+  background-image: linear-gradient(black,white,black);
+  width:100%;
+  background-attachment: fixed;
+}
+.jumbotron h3 {
+  color:#8B0000;
+  font-family:'Baloo', sans-serif;
+}
     
-  #gym {
+#gym {
   background-color:rgb(220,220,220);
 }
 .row {
@@ -216,6 +213,7 @@
   text-decoration:none;
   color:#8B0000;
 }
+
 /*instructors*/
 #instructors {
   background-color:rgb(211,211,211);
@@ -285,18 +283,18 @@
   border-radius:5%;
   z-index:99;
   }
-  #pricelist h3 {
-    color:white;
-    font-family:'Lexend Deca', sans-serif;
-    font-weight:bolder;
-    text-align:center;
-  }
-  #pricelist p {
+#pricelist h3 {
+  color:white;
+  font-family:'Lexend Deca', sans-serif;
+  font-weight:bolder;
+  text-align:center;
+}
+#pricelist p {
   color:black;
   font-family:'Lexend Deca', sans-serif;
   font-weight:bolder;
   text-align:center;
-  }
+}
 #price {
   border:black solid 4px;
   border-radius: 100%;
@@ -316,6 +314,7 @@
 #corporate {
   padding-left:0;
 }
+
 /*schedule*/
 #schedule {
   background-color:rgb(211,211,211);
@@ -328,21 +327,21 @@
   padding:5px;
   width:auto;
   margin:0 auto;
-  }
-  .headcol {
+ }
+.headcol {
   position:sticky;
   left: 0;
   top: auto;
-  }
-  .headrow {
-    position:sticky;
-    top:0;
-  }
+}
+.headrow {
+  position:sticky;
+  top:0;
+}
 #table table {
-   width: 90% ;
-   table-layout:fixed;
-   overflow-x:scroll;
-   border: silver solid 1px;
+  width: 90% ;
+  table-layout:fixed;
+  overflow-x:scroll;
+  border: silver solid 1px;
 }
 #table th {
   color:#66fcf1;
@@ -352,52 +351,53 @@
   border: silver solid 1px;
   background-color:black;
     }
- #table td {
+#table td {
   color:white;
   border: silver solid 1px;
   height:40px;
   width:150px;
   background-color:black;
-    }
-  #table .mma {
-    background-color:yellow;
-    color:black;
-  }
-  #table .tkd {
-    background-color:pink;
-    color:black;
-  }
-  #table .jjs {
-    background-color:greenyellow;
-    color:black;
-  }
-  #table .karate {
-    background-color:lightskyblue;
-    color:black;
-  }
-  #table .boxing {
-    background-color:orange;
-    color:black;
-  }
-  #table .muaythai {
-    background-color:aquamarine;
-    color:black;
-  }
-  #table .closed {
-    background-color:red;
-    color:black;
-  }
-  #table .special {
-    background-image:linear-gradient(to right, grey,indigo);
-    color:white;
-  }
-  #parent {
-    background-color:rgba(0,191,255,0.3);
-     justify-content:center;
-    display: flex;
-    align-items: center;
-  }
-  .dropdown-menu-center {
+}
+#table .mma {
+  background-color:yellow;
+  color:black;
+}
+#table .tkd {
+  background-color:pink;
+  color:black;
+}
+#table .jjs {
+  background-color:greenyellow;
+  color:black;
+}
+#table .karate {
+  background-color:lightskyblue;
+  color:black;
+}
+#table .boxing {
+  background-color:orange;
+  color:black;
+}
+#table .muaythai {
+  background-color:aquamarine;
+  color:black;
+}
+#table .closed {
+  background-color:red;
+  color:black;
+}
+#table .special {
+  background-image:linear-gradient(to right, grey,indigo);
+  color:white;
+}
+/* dropdown menu for mobile view */
+#parent {
+  background-color:rgba(0,191,255,0.3);
+  justify-content:center;
+  display: flex;
+  align-items: center;
+}
+.dropdown-menu-center {
   left: 50%;
   right: auto;
   top:25px;
@@ -416,6 +416,7 @@
   color:white;
   font-size:12px;
 }
+
 /*contact*/
 #contact {
   background-color:rgb(220,220,220);
@@ -429,11 +430,11 @@
   padding:10px;
   color:#C21460;
   font-family:'Lexend Deca', sans-serif;
-  }
+}
 
 .contactus {
   padding:20px 0 0 30px;
-  }
+}
 #contactform {
   color:black;
   margin:0 auto;
@@ -449,6 +450,12 @@ input,textarea {
   border:#8B4000 1px solid;
   border-radius:3px;
   color:black;
+}
+/* remove up and down button for number input */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 select {
   width:200px;
@@ -470,6 +477,8 @@ select, select option {
     display:none;
   }
 }
+
+/* responsive design */
 @media only screen and (max-width: 768px) {
  
   #video {
@@ -481,46 +490,46 @@ select, select option {
   #corporate {
     padding-left:10px;
   }
-#gymcarousel {
-  display:none;
-}
-.linkHome {
-  display:none;
-}
-.flip-card {
-  width:280px;
-  height:280px;
-}
-.sectionheader {
-  font-size:1.2em;
-}
-select {
-  width:130px;
-}
-input,textarea {
-  width:280px;
-}
-#btnGroupDrop1 {
-  font-family:'Lexend Deca', sans-serif;
-  font-size:9px;
-  background-color:black;
-}
-.flip-card-back h2 {
-  padding-top:10px;
-  font-size:16px;
-  font-family:'Orbitron', sans-serif;
-}
-.flip-card-back h6 {
-  font-family:'Lexend Deca', sans-serif;
-  font-size:12px;
-}
-.flip-card-back ul li {
-  line-height:2em;
-  font-size:10px;
-  text-align:left;
-  margin-top:2px;
-  font-family:'Lexend Deca', sans-serif;
-}
+  #gymcarousel {
+    display:none;
+  }
+  .linkHome {
+    display:none;
+  }
+  .flip-card {
+    width:280px;
+    height:280px;
+  }
+  .sectionheader {
+    font-size:1.2em;
+  }
+  select {
+    width:130px;
+  }
+  input,textarea {
+    width:280px;
+  }
+  #btnGroupDrop1 {
+    font-family:'Lexend Deca', sans-serif;
+    font-size:9px;
+    background-color:black;
+  }
+  .flip-card-back h2 {
+    padding-top:10px;
+    font-size:16px;
+    font-family:'Orbitron', sans-serif;
+  }
+  .flip-card-back h6 {
+    font-family:'Lexend Deca', sans-serif;
+    font-size:12px; 
+  }
+  .flip-card-back ul li {
+    line-height:2em;
+    font-size:10px;
+    text-align:left;
+    margin-top:2px;
+    font-family:'Lexend Deca', sans-serif;
+  }
 }
 
 /* tablets*/
@@ -528,14 +537,14 @@ input,textarea {
   .navbar-dark .navbar-nav .nav-link {
     font-size:14px;
   }
-#contact .resp-container iframe {
-  width:80vw;
-}
-#pricing .resp-container iframe {
-  padding:30px;
-  width:45vw;
-  height:330px;
-}
+  #contact .resp-container iframe {
+    width:80vw;
+  }
+  #pricing .resp-container iframe {
+    padding:30px;
+    width:45vw;
+    height:330px;
+  }
 }
 
 /* ipad Pro */
@@ -543,25 +552,26 @@ input,textarea {
   .hiddenMD {
     display:none;
   }
-  }
+}
+
 /* desktops */
 @media only screen and (min-width: 1200px) { 
-   .jumbotron {
+  .jumbotron {
     background-attachment:fixed;
     background-image:url("../images/lpbig.jpg");
     height:auto;
     padding:13rem 2rem;
   }
   .flip-card-back {
-  padding:10px;
-}
-#contact .resp-container iframe {
-  width:30vw;
-  height:350px;
-}
-#corporate {
-  padding-right:15px;
-}
+    padding:10px;
+  }
+  #contact .resp-container iframe {
+    width:30vw;
+    height:350px;
+  }
+  #corporate {
+    padding-right:15px;
+  }
   .space {
     display:none;
   }
@@ -597,10 +607,7 @@ input,textarea {
     font-size:32px;
   }
   #parent #btnGroupDrop1 {
-  font-size:7px;
+    font-size:7px;
   }
 }
-/* extra large desktops */
-@media only screen and (min-width: 1200px) { 
-  
-}
+
