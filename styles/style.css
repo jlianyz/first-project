@@ -38,10 +38,6 @@
 .navbar-dark .navbar-nav .nav-link:hover {
     color: cyan;
 }
-.navbar-dark .navbar-toggler-icon {
-    background-image: url('../images/ninjagymlogo.JPG');
-    width:120px;
-}
  #fa {
     margin: 0 10px 0 0;
 }
@@ -80,6 +76,7 @@
     font-family: 'Lexend Deca', sans-serif; 
     background-color:white;
     padding:15px 28px;
+    font-weight:bold;
     text-decoration:none;
     font-size:12px;
     color:#8B0000;
@@ -109,6 +106,12 @@
   font-size:12px;
   width:210px;
 }
+.modal-body #s{
+  padding:5px;
+  font-family:'Lexend Deca', sans-serif;
+  font-size:12px;
+  width:210px;
+}
   .jumbotron #close {
     color:white;
     border:none;
@@ -121,17 +124,17 @@
   }
   #coverPage1 {
       background-color:#383838;
-      padding:30px;
+      padding:50px 20px;
       margin:0 auto;
   }
   #coverPage2 {
       background-color:#484848;
-      padding: 30px;
+      padding: 50px 20px;
       margin:0 auto;
   }
   #coverPage3 {
      background-color:#585858;
-     padding: 30px;
+     padding: 50px 20px;
      margin:0 auto;
   }
   #coverPage1 h4, #coverPage2 h4, #coverPage3 h4 {
@@ -143,7 +146,7 @@
     #coverPage1 p, #coverPage2 p, #coverPage3 p {
       font-family: 'Lexend Deca', sans-serif;
       color:white;
-      line-height:1.5em;
+      line-height:2em;
   }
   #desc .button {
       font-family: 'Lexend Deca', sans-serif; 
@@ -159,12 +162,12 @@
   .section {
     padding:2px;
   }
-  #Header {
+  #Header1, #Header2, #Header3, #Header4, #Header5 {
     background-image: linear-gradient(black,white,black);
     width:100%;
     background-attachment: fixed;
     }
-    #Header h3 {
+  .jumbotron h3 {
       color:#8B0000;
       font-family:'Baloo', sans-serif;
     }
@@ -276,9 +279,9 @@
   }
 #pricelist {
   background-color:rgba(139,0,139,0.2);
-  margin:5px;
+  margin:3px;
   width:100%;
-  padding:10px;
+  padding-top:5px;
   border-radius:5%;
   z-index:99;
   }
@@ -317,6 +320,7 @@
 #schedule {
   background-color:rgb(211,211,211);
 }
+/*desktop table*/
 #table table,th,td {
   font-family: 'Lexend Deca', sans-serif;
   border-collapse:collapse;
@@ -442,74 +446,32 @@ fieldset label,input {
 }
 input,textarea {
   width:350px;
-  border:#66fcf1 1px solid;
+  border:#8B4000 1px solid;
   border-radius:3px;
   color:black;
 }
 select {
   width:200px;
-  border:#66fcf1 1px solid;
+  border:#8B4000 1px solid;
   border-radius:3px;
 }
 input[type=submit] {
   color:black;
   background-color:white;
-  border:2px #66fcf1 solid;
+  border:2px #8B4000 solid;
   border-radius:3px;
 }
 select, select option {
   color:black;
   font-family:'Lexend Deca', sans-serif;
 }
-@media only screen and (min-width: 600px) {
-  .jumbotron {
-    background-attachment:fixed;
-    background-image:url("../images/lpbig.jpg");
-    height:auto;
-    padding:13rem 2rem;
-  }
-   #pricelist {
-    width:32%;
-  }
-#corporate {
-  padding-right:15px;
-}
-  .space {
-    display:none;
-  }
-  .hiddenMD {
-    display:none;
-  }
-  #gymHeader {
-    background-image:url("../images/gym-bg.jpg");
-    background-attachment: fixed;
-  }
-  .jumbotron h3 {
-     color:white;
-     font-family:'Baloo', sans-serif;
-  }
-  #instHeader {
-    background-image:url("../images/gym-bg2.jpg");
-    background-attachment: fixed;
-  }
-  #priceHeader {
-    background-image:url("../images/gym-bg3.jpg");
-    background-attachment: fixed;
-  }
-  #timeHeader {
-    background-image:url("../images/gym-bg4.jpg");
-    background-attachment: fixed;
-  }
-  #contactHeader {
-    background-image:url("../images/gym-bg5.jpg");
-    background-attachment: fixed;
-  }
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   #table {
     display:none;
   }
+}
+@media only screen and (max-width: 768px) {
+ 
   #video {
     display:none;
   }
@@ -532,10 +494,6 @@ select, select option {
 .sectionheader {
   font-size:1.2em;
 }
-iframe {
-  width:280px;
-  height:280px;
-}
 select {
   width:130px;
 }
@@ -544,23 +502,105 @@ input,textarea {
 }
 #btnGroupDrop1 {
   font-family:'Lexend Deca', sans-serif;
-  font-size:8px;
+  font-size:9px;
   background-color:black;
 }
 .flip-card-back h2 {
-  padding-top:15px;
-  font-size:20px;
+  padding-top:10px;
+  font-size:16px;
   font-family:'Orbitron', sans-serif;
 }
 .flip-card-back h6 {
   font-family:'Lexend Deca', sans-serif;
-  font-size:16px;
+  font-size:12px;
 }
 .flip-card-back ul li {
   line-height:2em;
-  font-size:12px;
+  font-size:10px;
   text-align:left;
   margin-top:2px;
   font-family:'Lexend Deca', sans-serif;
 }
+}
+
+/* tablets*/
+@media only screen and (min-width: 768px) { 
+  .navbar-dark .navbar-nav .nav-link {
+    font-size:14px;
+  }
+#contact .resp-container iframe {
+  width:80vw;
+}
+#pricing .resp-container iframe {
+  padding:30px;
+  width:45vw;
+  height:330px;
+}
+}
+
+/* ipad Pro */
+@media only screen and (min-width: 1024px) { 
+  .hiddenMD {
+    display:none;
+  }
+  }
+/* desktops */
+@media only screen and (min-width: 1200px) { 
+   .jumbotron {
+    background-attachment:fixed;
+    background-image:url("../images/lpbig.jpg");
+    height:auto;
+    padding:13rem 2rem;
+  }
+  .flip-card-back {
+  padding:10px;
+}
+#contact .resp-container iframe {
+  width:30vw;
+  height:350px;
+}
+#corporate {
+  padding-right:15px;
+}
+  .space {
+    display:none;
+  }
+
+  #Header1 {
+    background-image:url("../images/gym-bg.jpg");
+    background-attachment: fixed;
+  }
+  .jumbotron h3 {
+     color:white;
+     font-family:'Baloo', sans-serif;
+  }
+  #Header2 {
+    background-image:url("../images/gym-bg2.jpg");
+    background-attachment: fixed;
+  }
+  #Header3 {
+    background-image:url("../images/gym-bg3.jpg");
+    background-attachment: fixed;
+  }
+  #Header4 {
+    background-image:url("../images/gym-bg4.jpg");
+    background-attachment: fixed;
+  }
+  #Header5 {
+    background-image:url("../images/gym-bg5.jpg");
+    background-attachment: fixed;
+  }
+}
+/*for iphone 5 and smaller*/
+@media only screen and (max-width: 365px) {
+  .jumbotron h3 {
+    font-size:32px;
+  }
+  #parent #btnGroupDrop1 {
+  font-size:7px;
+  }
+}
+/* extra large desktops */
+@media only screen and (min-width: 1200px) { 
+  
 }
