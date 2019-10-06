@@ -1,7 +1,7 @@
 # Ninja Gym website
 ## Stream One Project: User-Centric Frontend Development - Code Institute
 ### Introduction
-This is a website for Ninja Gym, an imaginary boxing gym, to attract boxing enthusiasts who are new potential members and retain existing members by providing useful info. The information is structured into:
+This is a website for Ninja Gym, an imaginary boxing gym, to attract boxing enthusiasts who are new potential members and retain existing members by providing useful info. The site can be found [here](https://jlianyz.github.io/first-project/), and the information is structured into:
 
 **1. The gym**
   * List of facilities
@@ -72,7 +72,7 @@ The website has been designed to be responsive for all media forms (Mobile, tabl
 * Containers are resized responsively so they fit nicely within iPad and iPad pro
 * Text in navbar is reduced so that the "instructors" word and its Font Awesome icon remain inline
 * Table is shown for the class schedule, and scroll along x-axis is enabled
-* * iPad Pro is best viewed in landscape mode
+* iPad Pro is best viewed in landscape mode
 
 **Desktop version**
 * Attractive boxing related images are shown in section headers, while still having the text clearly visible as opacity of background image is reduced
@@ -86,10 +86,7 @@ The website has been designed to be responsive for all media forms (Mobile, tabl
 1. HTML
 2. CSS
 3. Bootstrap (4.3.1)
-4. Font Awesome
-5. Google Fonts
-6. Google Maps iframe
- ***
+***
 ### Features Left to Implement
 In the future, I would like to 
 * Allow users to book classes online, and also make the timetable more dynamic by allowing users to select the day from a drop down and only see the relevant classes.
@@ -116,9 +113,9 @@ Basic checks include:
 * Ensuring that the site looks consistent across all major browsers (IE, Chrome, Safari, Firefox, Edge) and mobile devices of various sizes (extra small mobile screen, average mobile screen, iPad and iPad pro screens)
 * Checked that there were no grammatical errors, the right images were showing up at the right places (eg. the image carousel shows in large devices and is hidden in mobile devices) and that content was easy to read
 
-During testing, it was found that the flip card does not work on IE. When flipped to the back, the image rotated 180 degrees but the text did not show up.  
-
 Also, for tablets, it was found that the video and google Maps iframes were not responsive and overlapped into adjacent columns. As such, I wrapped them in a div and made the div responsive. 
+
+Known bugs: During testing, it was found that the flip card does not work on IE. When flipped to the back, the image rotated 180 degrees but the text did not show up. 
 ***
 ### Deployment
 This site is hosted using GitHub pages and is deployed from the master branch. Code is written in AWS Cloud 9, and upon committing to the repository, the deployed site will be automatically updated. The file architecture is as such: 
@@ -152,4 +149,5 @@ I used this [Google Maps generator](https://www.maps.ie/create-google-map/)
 I adapted the scrollbar code from [W3 schools](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp)
 
 **Flip card**
+
 I adapted the flip card code from [W3 schools](https://www.w3schools.com/howto/howto_css_flip_card.asp)
