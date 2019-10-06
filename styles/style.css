@@ -69,7 +69,6 @@
   border:none;
   color:white;
 }
-
 .jumbotron #existing, .enquire {
   font-family: 'Lexend Deca', sans-serif; 
   background-color:white;
@@ -156,9 +155,9 @@
 }
 
 /*GYM*/
-  .section {
-    padding:2px;
-  }
+.section {
+  padding:2px;
+}
 #Header1, #Header2, #Header3, #Header4, #Header5 {
   background-image: linear-gradient(black,white,black);
   width:100%;
@@ -168,7 +167,7 @@
   color:#8B0000;
   font-family:'Baloo', sans-serif;
 }
-    
+   
 #gym {
   background-color:rgb(220,220,220);
 }
@@ -203,7 +202,7 @@
 }
 .card {
   background-color:	#606060;
-     border:1px solid white;
+  border:1px solid white;
 }
 .card button {
   color:white;
@@ -235,11 +234,9 @@
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
-
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -251,7 +248,6 @@
   background-color: black;
   color: black;
 }
-
 .flip-card-back {
   background-color: black;
   color: white;
@@ -274,7 +270,7 @@
 /*pricing*/
 #pricing {
   background-color:rgb(192,192,192);
-  }
+}
 #pricelist {
   background-color:rgba(139,0,139,0.2);
   margin:3px;
@@ -282,7 +278,7 @@
   padding-top:5px;
   border-radius:5%;
   z-index:99;
-  }
+}
 #pricelist h3 {
   color:white;
   font-family:'Lexend Deca', sans-serif;
@@ -310,7 +306,6 @@
   align-items: center;
   justify-content: center;
 }
-
 #corporate {
   padding-left:0;
 }
@@ -327,7 +322,7 @@
   padding:5px;
   width:auto;
   margin:0 auto;
- }
+}
 .headcol {
   position:sticky;
   left: 0;
@@ -350,7 +345,7 @@
   width:150px;
   border: silver solid 1px;
   background-color:black;
-    }
+}
 #table td {
   color:white;
   border: silver solid 1px;
@@ -431,7 +426,6 @@
   color:#C21460;
   font-family:'Lexend Deca', sans-serif;
 }
-
 .contactus {
   padding:20px 0 0 30px;
 }
@@ -480,7 +474,6 @@ select, select option {
 
 /* responsive design */
 @media only screen and (max-width: 768px) {
- 
   #video {
     display:none;
   }
@@ -610,4 +603,3 @@ select, select option {
     font-size:7px;
   }
 }
-
